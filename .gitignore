@@ -1,0 +1,59 @@
+# Windows development files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# IDE and editor metadata
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.code-workspace
+*~
+*.swp
+*.swo
+
+# Dependencies and generated build output
+node_modules/
+build/
+dist/
+coverage/
+.cache/
+.eslintcache
+*.tsbuildinfo
+
+# Temporary files and logs
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local.json
+*.local.yaml
+*.local.yml
+secrets/
+
+# Local Foundry runtime state
+foundry-data/
+
+# Large temporary Dungeondraft export workspaces
+maps/exports/temp/
+maps/exports/_scratch/
+

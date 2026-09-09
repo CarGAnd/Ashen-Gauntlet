@@ -1,0 +1,22 @@
+{
+  "id": "ashen-gauntlet",
+  "title": "The Ashen Gauntlet",
+  "description": "Campaign framework and content module for The Ashen Gauntlet.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Project Author"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/ashen-gauntlet.css"
+  ]
+}
+
