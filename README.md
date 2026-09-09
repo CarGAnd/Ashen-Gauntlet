@@ -1,6 +1,6 @@
 # The Ashen Gauntlet
 
-This repository is the canonical development source for **The Ashen Gauntlet**, a campaign project targeting Foundry Virtual Tabletop 14.
+This repository is the canonical development source for **The Ashen Gauntlet**, a campaign project targeting Foundry Virtual Tabletop Version 13 Build 351.
 
 ## Repository layout
 
@@ -16,4 +16,3 @@ This repository is the canonical development source for **The Ashen Gauntlet**, 
 ## Development boundary
 
 Foundry runtime databases under `Data/worlds` must never be edited directly by repository tooling. Campaign content and module behavior should be developed from the canonical sources in this repository and imported through documented Foundry VTT APIs or purpose-built tooling.
-

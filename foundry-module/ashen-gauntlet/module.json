@@ -9,8 +9,8 @@
     }
   ],
   "compatibility": {
-    "minimum": "14",
-    "verified": "14"
+    "minimum": "13",
+    "verified": "13.351"
   },
   "esmodules": [
     "scripts/main.js"
@@ -19,4 +19,3 @@
     "styles/ashen-gauntlet.css"
   ]
 }
-

@@ -4,11 +4,13 @@
 - Do not modify files outside the project root unless explicitly instructed.
 - Do not directly edit Foundry world databases under `Data/worlds`.
 - Prefer documented public Foundry VTT APIs.
-- Target Foundry VTT 14.
+- Target Foundry VTT Version 13 Build 351.
+- Do not use Foundry VTT 14-only APIs or features unless explicitly approved.
+- When Foundry behavior is version-specific, use V13 documentation/API assumptions.
+- Avoid private/internal Foundry APIs where a documented V13 public API is available.
 - Keep campaign logic modular.
 - Favor, Spotlight, Sponsor, Gem, and contestant systems should eventually be implemented as distinct services or modules rather than tightly coupled scripts.
 - Keep Dungeondraft source files separate from Foundry runtime map assets.
 - Commercial or externally licensed Dungeondraft asset packs must not be copied into this repository unless explicitly approved.
 - Generated and exported assets must have deterministic and understandable filenames.
 - Scene-specific material should eventually live under a dedicated scene directory rather than being scattered throughout the repository.
-
