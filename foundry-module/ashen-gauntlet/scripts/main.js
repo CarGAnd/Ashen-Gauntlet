@@ -1,3 +1,5 @@
+import { synchronizeDevelopmentSceneCompendium } from "./scenes/development-scene-import.js";
+
 const MODULE_ID = "ashen-gauntlet";
 const SHOW_STARTUP_NOTIFICATION_SETTING = "showStartupNotification";
 
@@ -25,6 +27,11 @@ function onReady()
 {
     console.info("The Ashen Gauntlet | Ready");
 
+    if (game.user.isActiveGM)
+    {
+        synchronizeDevelopmentSceneCompendium().then(onDevelopmentSceneSyncSuccess).catch(onDevelopmentSceneSyncFailure);
+    }
+
     if (game.user.isGM == false)
     {
         return;
@@ -37,6 +44,23 @@ function onReady()
     }
 
     ui.notifications.info("The Ashen Gauntlet loaded successfully.");
+}
+
+/**
+ * <summary>Reports development content synchronization. Input: synchronization result.</summary>
+ */
+function onDevelopmentSceneSyncSuccess(result)
+{
+    console.info(`The Ashen Gauntlet | Development Scenes ${result.action}: ${result.sceneName}`);
+}
+
+/**
+ * <summary>Reports development content failure. Input: synchronization error.</summary>
+ */
+function onDevelopmentSceneSyncFailure(error)
+{
+    console.error("The Ashen Gauntlet | Development Scene synchronization failed", error);
+    ui.notifications.error("The Ashen Gauntlet development Scene import failed. See the console for details.");
 }
 
 Hooks.once("init", onInit);

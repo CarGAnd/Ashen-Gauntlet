@@ -13,4 +13,11 @@
 - Keep Dungeondraft source files separate from Foundry runtime map assets.
 - Commercial or externally licensed Dungeondraft asset packs must not be copied into this repository unless explicitly approved.
 - Generated and exported assets must have deterministic and understandable filenames.
-- Scene-specific material should eventually live under a dedicated scene directory rather than being scattered throughout the repository.
+- Every authored major scene gets its own scene package.
+- Scene-specific content should remain colocated.
+- Runtime Foundry identifiers must never become the only identifier for authored content.
+- Dungeondraft source maps remain development source assets, not Foundry runtime assets.
+- Map blueprint formats should remain backward-compatible where practical once real campaign content begins using them.
+- Generated Foundry content must be reproducible from authored source.
+- Generated runtime artifacts must not replace canonical scene source.
+- World database files must never be directly generated or edited.

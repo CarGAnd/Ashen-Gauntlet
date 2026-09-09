@@ -1,0 +1,29 @@
+{
+  "name": "Development Scene Pipeline",
+  "width": 2000,
+  "height": 2400,
+  "padding": 0,
+  "background": {
+    "src": "modules/ashen-gauntlet/assets/maps/development/dev01-scene-pipeline.svg"
+  },
+  "backgroundColor": "#171b20",
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "distance": 5,
+    "units": "ft",
+    "color": "#d4d8dc",
+    "alpha": 0.25
+  },
+  "navigation": false,
+  "tokenVision": false,
+  "flags": {
+    "ashen-gauntlet": {
+      "sourceId": "dev01-scene-pipeline",
+      "sourceHash": "6e0f27062645415d3395d18e5acdca6ddf35b329b68fa1688d7540c1c50542c5",
+      "sourcePath": "scenes/development/dev01-scene-pipeline/scene.yaml",
+      "blueprintPath": "scenes/development/dev01-scene-pipeline/map/blueprint.json",
+      "developmentContent": true
+    }
+  }
+}

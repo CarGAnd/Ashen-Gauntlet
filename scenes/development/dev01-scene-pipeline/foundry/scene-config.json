@@ -1,0 +1,7 @@
+{
+  "sceneId": "dev01-scene-pipeline",
+  "purpose": "Stores reproducible Foundry V13 Scene configuration after the import format is defined.",
+  "status": "not-configured",
+  "configuration": {}
+}
+

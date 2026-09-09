@@ -1,0 +1,16 @@
+id: dev01-scene-pipeline
+title: Development Scene Pipeline
+category: development
+status: draft
+summary: A deliberately simple test scene used to validate the future scene and map tooling pipeline.
+intendedTier: null
+expectedPartyLevel: null
+tags:
+  - development
+  - pipeline-test
+mapSource: map/blueprint.json
+foundrySceneId: null
+notes: >-
+  Development-only test content. It contains no campaign lore, runtime campaign
+  state, or finalized encounter balance.
+

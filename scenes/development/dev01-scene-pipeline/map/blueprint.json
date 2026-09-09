@@ -1,0 +1,122 @@
+{
+  "id": "dev01-scene-pipeline",
+  "grid": {
+    "type": "square",
+    "size": 100,
+    "distance": 5,
+    "units": "ft"
+  },
+  "dimensions": {
+    "width": 20,
+    "height": 24,
+    "units": "grid-cells"
+  },
+  "theme": "neutral development test",
+  "areas": [
+    {
+      "id": "southern-entrance",
+      "type": "entrance",
+      "x": 8,
+      "y": 20,
+      "width": 4,
+      "height": 3
+    },
+    {
+      "id": "central-chamber",
+      "type": "chamber",
+      "x": 6,
+      "y": 8,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "id": "northern-exit",
+      "type": "exit",
+      "x": 8,
+      "y": 1,
+      "width": 4,
+      "height": 3
+    },
+    {
+      "id": "side-chamber",
+      "type": "chamber",
+      "x": 15,
+      "y": 10,
+      "width": 4,
+      "height": 5
+    }
+  ],
+  "connections": [
+    {
+      "id": "southern-passage",
+      "from": "southern-entrance",
+      "to": "central-chamber",
+      "type": "open"
+    },
+    {
+      "id": "northern-passage",
+      "from": "central-chamber",
+      "to": "northern-exit",
+      "type": "open"
+    },
+    {
+      "id": "side-passage",
+      "from": "central-chamber",
+      "to": "side-chamber",
+      "type": "open"
+    },
+    {
+      "id": "hidden-side-route",
+      "from": "side-chamber",
+      "to": "northern-exit",
+      "type": "secret"
+    }
+  ],
+  "terrain": [
+    {
+      "id": "central-rubble",
+      "type": "difficult",
+      "area": "central-chamber"
+    }
+  ],
+  "features": [],
+  "entrances": [
+    {
+      "id": "south-entry",
+      "area": "southern-entrance",
+      "edge": "south"
+    }
+  ],
+  "exits": [
+    {
+      "id": "north-exit",
+      "area": "northern-exit",
+      "edge": "north"
+    }
+  ],
+  "secrets": [
+    {
+      "id": "secret-side-connection",
+      "connection": "hidden-side-route"
+    }
+  ],
+  "tacticalZones": [
+    {
+      "id": "central-control-zone",
+      "area": "central-chamber",
+      "purpose": "Tests tactical-zone transfer through the scene pipeline."
+    }
+  ],
+  "spotlightZones": [
+    {
+      "id": "side-chamber-spotlight-zone",
+      "area": "side-chamber",
+      "purpose": "Tests a Spotlight-designated map zone without implementing Spotlight mechanics."
+    }
+  ],
+  "notes": [
+    "Development-only pipeline fixture with no campaign lore.",
+    "Area coordinates and dimensions use grid cells measured from the map's northwest corner."
+  ]
+}
+
