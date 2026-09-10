@@ -1,0 +1,79 @@
+{
+  "id": "jr-c-hub-v1",
+  "authoringStatus": "candidate-pre-render",
+  "topologyBinding": {"node":"JR-C-H","incoming":["JR-C-O1","JR-C-O2"],"outgoing":["JR-C-P-BK","JR-C-P-DR","JR-C-P-GW"],"lateral":["JR-D-O1"]},
+  "assetProfile": "ashen-volcano-v1",
+  "grid": {"type":"square","size":100,"distance":5,"units":"ft"},
+  "dimensions": {"width":54,"height":44,"units":"grid-cells"},
+  "theme": "terraced blackwater cataract divide with archaeological, engineered, burrow, and exposed surface-route previews",
+  "areas": [
+    {"id":"approach-o1","type":"entrance-zone","x":2,"y":31,"width":12,"height":8},
+    {"id":"approach-o2","type":"entrance-zone","x":39,"y":33,"width":11,"height":7},
+    {"id":"central-west-terrace","type":"decision-space","x":15,"y":18,"width":13,"height":13},
+    {"id":"central-east-terrace","type":"decision-space","x":31,"y":17,"width":11,"height":14},
+    {"id":"cataract-cut","type":"water-chasm","x":27,"y":9,"width":5,"height":25},
+    {"id":"bk-well-road","type":"route-preview","x":4,"y":7,"width":12,"height":10},
+    {"id":"dr-drainage-gallery","type":"route-preview","x":42,"y":10,"width":10,"height":10},
+    {"id":"gw-underfall-bore","type":"route-preview","x":31,"y":4,"width":10,"height":9},
+    {"id":"jr-d-ash-crossing","type":"lateral-route-preview","x":17,"y":2,"width":11,"height":9},
+    {"id":"spray-overlook","type":"side-position","x":20,"y":11,"width":6,"height":6}
+  ],
+  "connections": [
+    {"id":"o1-to-west","from":"approach-o1","to":"central-west-terrace","type":"wet-ledges"},
+    {"id":"o2-to-east","from":"approach-o2","to":"central-east-terrace","type":"drowned-stair-ravine"},
+    {"id":"west-to-east-a","from":"central-west-terrace","to":"central-east-terrace","type":"lower-shallow-crossing"},
+    {"id":"west-to-east-b","from":"central-west-terrace","to":"central-east-terrace","type":"upper-broken-span"},
+    {"id":"west-to-bk","from":"central-west-terrace","to":"bk-well-road","type":"descending-paved-route"},
+    {"id":"east-to-dr","from":"central-east-terrace","to":"dr-drainage-gallery","type":"engineered-spillway"},
+    {"id":"east-to-gw","from":"central-east-terrace","to":"gw-underfall-bore","type":"spray-and-rock-route"},
+    {"id":"west-to-jrd","from":"central-west-terrace","to":"jr-d-ash-crossing","type":"exposed-ascent"}
+  ],
+  "terrain": [
+    {"id":"wet-basalt","type":"semantic","semanticId":"terrain.volcanic.rocky","areas":["central-west-terrace","central-east-terrace","spray-overlook"]},
+    {"id":"mossed-arrivals","type":"semantic","semanticId":"terrain.jungle.moss","areas":["approach-o1","approach-o2"]},
+    {"id":"bk-paving","type":"semantic","semanticId":"ruin.floor.worn-cobble","area":"bk-well-road"},
+    {"id":"dr-floor","type":"semantic","semanticId":"dwarven.floor.slab","area":"dr-drainage-gallery"},
+    {"id":"gw-cave","type":"semantic","semanticId":"burrow.floor.cave","area":"gw-underfall-bore"},
+    {"id":"ash-ridge","type":"semantic","semanticId":"terrain.volcanic.gravel","area":"jr-d-ash-crossing"}
+  ],
+  "features": [
+    {"id":"spray-growth","type":"semantic-object-cluster","semanticIds":["vegetation.fern","vegetation.moss.swamp"],"areas":["central-west-terrace","central-east-terrace"]},
+    {"id":"dr-waterworks-sign","type":"semantic-object-cluster","semanticIds":["dwarven.object.pipe","dwarven.object.gears"],"area":"dr-drainage-gallery"},
+    {"id":"gw-bore-sign","type":"semantic-object-cluster","semanticIds":["burrow.object.cave-hole","burrow.object.monster-bones"],"area":"gw-underfall-bore"},
+    {"id":"ash-wind-sign","type":"semantic-object-cluster","semanticIds":["object.ash.pile","rock.lava.basic"],"area":"jr-d-ash-crossing"}
+  ],
+  "entrances": [
+    {"id":"from-o1","area":"approach-o1","topologyNode":"JR-C-O1","edge":"southwest"},
+    {"id":"from-o2","area":"approach-o2","topologyNode":"JR-C-O2","edge":"southeast"}
+  ],
+  "exits": [
+    {"id":"to-bk","area":"bk-well-road","topologyNode":"JR-C-P-BK","edge":"northwest"},
+    {"id":"to-dr","area":"dr-drainage-gallery","topologyNode":"JR-C-P-DR","edge":"east"},
+    {"id":"to-gw","area":"gw-underfall-bore","topologyNode":"JR-C-P-GW","edge":"northeast"},
+    {"id":"to-jr-d","area":"jr-d-ash-crossing","topologyNode":"JR-D-O1","edge":"north"}
+  ],
+  "secrets": [],
+  "elevationBands": [
+    {"id":"lower-waterline","relativeFeet":0,"areas":["approach-o2","bk-well-road","cataract-cut"]},
+    {"id":"main-terraces","relativeFeet":15,"areas":["approach-o1","central-west-terrace","central-east-terrace","dr-drainage-gallery"]},
+    {"id":"upper-spray-and-ridge","relativeFeet":30,"areas":["gw-underfall-bore","jr-d-ash-crossing","spray-overlook"]}
+  ],
+  "routeCues": [
+    {"exit":"to-bk","cues":["worn paving disappearing into water","old retaining walls","cool flooded descent"]},
+    {"exit":"to-dr","cues":["straight drainage cut","slab floor","pipes and controlled water flow"]},
+    {"exit":"to-gw","cues":["irregular bore behind spray","animal abrasion","deep resonant tunnel sound"]},
+    {"exit":"to-jr-d","cues":["dry ash wind","exposed rising skyline","fumarole haze"]}
+  ],
+  "tacticalZones": [
+    {"id":"west-terrace-control","area":"central-west-terrace","purpose":"Controls BK/JR-D side but not DR/GW side."},
+    {"id":"east-terrace-control","area":"central-east-terrace","purpose":"Controls DR/GW side but not BK/JR-D side."},
+    {"id":"cataract-crossings","area":"cataract-cut","purpose":"Two distinct crossings prevent a single bridge from locking the hub."},
+    {"id":"spray-overlook","area":"spray-overlook","purpose":"Scouting vantage with partial concealment from water spray."}
+  ],
+  "spotlightZones": [{"id":"divide-center","area":"central-west-terrace","purpose":"Audience-readable cataract backdrop without requiring combat."}],
+  "notes": [
+    "The cataract should divide sightlines but not split the hub into disconnected halves.",
+    "The JR-D surface route is a real fourth decision arm and should look exposed compared with the interior penetrations.",
+    "No detailed encounter is authored in this candidate blueprint."
+  ]
+}

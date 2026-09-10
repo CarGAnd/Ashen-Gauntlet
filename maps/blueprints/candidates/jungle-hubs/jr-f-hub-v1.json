@@ -1,0 +1,72 @@
+{
+  "id": "jr-f-hub-v1",
+  "authoringStatus": "candidate-pre-render",
+  "topologyBinding": {"node":"JR-F-H","incoming":["JR-F-O1","JR-F-O2"],"outgoing":["JR-F-P-GW","JR-F-P-VC","JR-F-P-VE"]},
+  "assetProfile": "ashen-volcano-v1",
+  "grid": {"type":"square","size":100,"distance":5,"units":"ft"},
+  "dimensions": {"width":50,"height":42,"units":"grid-cells"},
+  "theme": "dry reclaimed lava terraces with natural, social-vent, and ecological breach routes",
+  "areas": [
+    {"id":"approach-o1","type":"entrance-zone","x":3,"y":31,"width":11,"height":8},
+    {"id":"approach-o2","type":"entrance-zone","x":36,"y":32,"width":10,"height":7},
+    {"id":"central-upper-terrace","type":"decision-space","x":17,"y":16,"width":17,"height":13},
+    {"id":"lower-ash-gully","type":"difficult-zone","x":12,"y":27,"width":25,"height":6},
+    {"id":"gw-lava-tube","type":"route-preview","x":3,"y":9,"width":12,"height":10},
+    {"id":"vc-furnace-cleft","type":"route-preview","x":37,"y":8,"width":10,"height":10},
+    {"id":"ve-green-breach","type":"route-preview","x":18,"y":2,"width":13,"height":10},
+    {"id":"east-observation-step","type":"side-position","x":34,"y":20,"width":7,"height":7}
+  ],
+  "connections": [
+    {"id":"o1-to-terrace","from":"approach-o1","to":"central-upper-terrace","type":"stepped-lava-plates"},
+    {"id":"o2-to-terrace","from":"approach-o2","to":"central-upper-terrace","type":"talus-and-terrace"},
+    {"id":"terrace-to-gw","from":"central-upper-terrace","to":"gw-lava-tube","type":"descending-collapsed-tube"},
+    {"id":"terrace-to-vc","from":"central-upper-terrace","to":"vc-furnace-cleft","type":"narrow-warm-cleft"},
+    {"id":"terrace-to-ve","from":"central-upper-terrace","to":"ve-green-breach","type":"root-and-water-fracture"},
+    {"id":"terrace-to-step","from":"central-upper-terrace","to":"east-observation-step","type":"short-basalt-rise"}
+  ],
+  "terrain": [
+    {"id":"central-basalt","type":"semantic","semanticId":"terrain.volcanic.rocky","areas":["central-upper-terrace","east-observation-step"]},
+    {"id":"ash-talus","type":"semantic","semanticId":"terrain.volcanic.gravel","areas":["approach-o1","approach-o2","lower-ash-gully"]},
+    {"id":"gw-cave","type":"semantic","semanticId":"burrow.floor.cave","area":"gw-lava-tube"},
+    {"id":"ve-moss","type":"semantic","semanticId":"terrain.jungle.moss","area":"ve-green-breach"},
+    {"id":"vent-cracked-ground","type":"semantic","semanticId":"floor.earth.cracked","area":"vc-furnace-cleft"}
+  ],
+  "features": [
+    {"id":"ash-accumulation","type":"semantic-object-cluster","semanticIds":["object.ash.pile","rock.lava.basic"],"areas":["lower-ash-gully","vc-furnace-cleft"]},
+    {"id":"scrub-reclamation","type":"semantic-object-cluster","semanticIds":["vegetation.fern","vegetation.root.exposed"],"areas":["approach-o1","approach-o2","central-upper-terrace"]},
+    {"id":"gw-sign","type":"semantic-object-cluster","semanticIds":["burrow.object.cave-hole","burrow.object.monster-bones"],"area":"gw-lava-tube"},
+    {"id":"ve-sign","type":"semantic-object-cluster","semanticIds":["vegetation.moss.swamp","vegetation.root.exposed","elven.object.vines"],"area":"ve-green-breach"},
+    {"id":"vc-sign","type":"worked-vent-detail","semanticIds":["object.ash.pile","portal.threshold.basic"],"area":"vc-furnace-cleft"}
+  ],
+  "entrances": [
+    {"id":"from-o1","area":"approach-o1","topologyNode":"JR-F-O1","edge":"southwest"},
+    {"id":"from-o2","area":"approach-o2","topologyNode":"JR-F-O2","edge":"southeast"}
+  ],
+  "exits": [
+    {"id":"to-gw","area":"gw-lava-tube","topologyNode":"JR-F-P-GW","edge":"northwest"},
+    {"id":"to-vc","area":"vc-furnace-cleft","topologyNode":"JR-F-P-VC","edge":"northeast"},
+    {"id":"to-ve","area":"ve-green-breach","topologyNode":"JR-F-P-VE","edge":"north"}
+  ],
+  "secrets": [],
+  "elevationBands": [
+    {"id":"lower-gully-and-tube","relativeFeet":0,"areas":["lower-ash-gully","gw-lava-tube"]},
+    {"id":"main-terraces","relativeFeet":15,"areas":["approach-o1","approach-o2","central-upper-terrace","vc-furnace-cleft"]},
+    {"id":"upper-green-fracture","relativeFeet":25,"areas":["ve-green-breach","east-observation-step"]}
+  ],
+  "routeCues": [
+    {"exit":"to-gw","cues":["collapsed lava tube","irregular widening","bones and cooler deep airflow"]},
+    {"exit":"to-vc","cues":["warm furnace draft","soot accumulation","worked footholds in a narrow cleft"]},
+    {"exit":"to-ve","cues":["wet green seam","roots crossing basalt","condensation and controlled-looking growth"]}
+  ],
+  "tacticalZones": [
+    {"id":"central-terrace","area":"central-upper-terrace","purpose":"Broad maneuvering ground with partial sight to all route families."},
+    {"id":"ash-gully","area":"lower-ash-gully","purpose":"Difficult low route allowing movement beneath central sightlines."},
+    {"id":"observation-step","area":"east-observation-step","purpose":"High view over the hub without controlling the GW approach."}
+  ],
+  "spotlightZones": [{"id":"ashfall-center","area":"central-upper-terrace","purpose":"Open volcanic-jungle decision space suitable for audience visibility."}],
+  "notes": [
+    "Keep active lava absent from the hub unless later encounter design specifically adds it; heat should be implied through geology and airflow.",
+    "The hub should be visibly drier and more ash-marked than JR-A/C while still belonging to the Jungle Ring.",
+    "No detailed encounter is authored in this candidate blueprint."
+  ]
+}

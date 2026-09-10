@@ -1,0 +1,1161 @@
+{
+  "id": "jungle-ring-v1",
+  "status": "accepted-project-baseline",
+  "documentation": "docs/map-design/jungle-ring-topology-v1.md",
+  "defaultUndirected": true,
+  "nodes": [
+    {
+      "id": "JR-A-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-A"
+    },
+    {
+      "id": "JR-A-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-A"
+    },
+    {
+      "id": "JR-A-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-A"
+    },
+    {
+      "id": "JR-A-I4",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-A"
+    },
+    {
+      "id": "JR-A-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Flooded Trail Forks",
+      "territory": "JR-A"
+    },
+    {
+      "id": "JR-A-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Basalt Shelf",
+      "territory": "JR-A"
+    },
+    {
+      "id": "JR-A-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Raincoil Confluence",
+      "territory": "JR-A"
+    },
+    {
+      "id": "JR-A-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Drowned Observation Terrace",
+      "territory": "JR-A"
+    },
+    {
+      "id": "JR-A-P-BK",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Sinkgate",
+      "territory": "JR-A",
+      "destinationArea": "BK",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-A-P-GW",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Beast-Cut Tunnel",
+      "territory": "JR-A",
+      "destinationArea": "GW",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-A-P-VE",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Root-Choked Breach",
+      "territory": "JR-A",
+      "destinationArea": "VE",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-B-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-B"
+    },
+    {
+      "id": "JR-B-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-B"
+    },
+    {
+      "id": "JR-B-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-B"
+    },
+    {
+      "id": "JR-B-I4",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-B"
+    },
+    {
+      "id": "JR-B-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Fractured Canopy Shelf",
+      "territory": "JR-B"
+    },
+    {
+      "id": "JR-B-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Hanging-Root Descent",
+      "territory": "JR-B"
+    },
+    {
+      "id": "JR-B-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Crownbreak Shelf",
+      "territory": "JR-B"
+    },
+    {
+      "id": "JR-B-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Isolated Crown Shrine",
+      "territory": "JR-B"
+    },
+    {
+      "id": "JR-B-P-VE",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Elven Maintenance Breach",
+      "territory": "JR-B",
+      "destinationArea": "VE",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-B-P-DR",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Dwarven Survey Stair",
+      "territory": "JR-B",
+      "destinationArea": "DR",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-B-P-VC",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Ventilation Throat",
+      "territory": "JR-B",
+      "destinationArea": "VC",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-C-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-C"
+    },
+    {
+      "id": "JR-C-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-C"
+    },
+    {
+      "id": "JR-C-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-C"
+    },
+    {
+      "id": "JR-C-I4",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-C"
+    },
+    {
+      "id": "JR-C-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Cataract Shelf",
+      "territory": "JR-C"
+    },
+    {
+      "id": "JR-C-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Drowned Stair-Ravine",
+      "territory": "JR-C"
+    },
+    {
+      "id": "JR-C-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Blackwater Divide",
+      "territory": "JR-C"
+    },
+    {
+      "id": "JR-C-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Sealed Flood Chamber",
+      "territory": "JR-C"
+    },
+    {
+      "id": "JR-C-P-BK",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Collapsed Well-Road",
+      "territory": "JR-C",
+      "destinationArea": "BK",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-C-P-DR",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Drainage Gallery",
+      "territory": "JR-C",
+      "destinationArea": "DR",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-C-P-GW",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Water-Cut Burrow",
+      "territory": "JR-C",
+      "destinationArea": "GW",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-D-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-D"
+    },
+    {
+      "id": "JR-D-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-D"
+    },
+    {
+      "id": "JR-D-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-D"
+    },
+    {
+      "id": "JR-D-I4",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-D"
+    },
+    {
+      "id": "JR-D-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Steam-Scar Saddle",
+      "territory": "JR-D"
+    },
+    {
+      "id": "JR-D-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Ash Scrub Traverse",
+      "territory": "JR-D"
+    },
+    {
+      "id": "JR-D-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Emberridge Fork",
+      "territory": "JR-D"
+    },
+    {
+      "id": "JR-D-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Fumarole Overlook",
+      "territory": "JR-D"
+    },
+    {
+      "id": "JR-D-P-DR",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Haulage Tunnel",
+      "territory": "JR-D",
+      "destinationArea": "DR",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-D-P-VC",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Vent Chimney",
+      "territory": "JR-D",
+      "destinationArea": "VC",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-D-P-LA",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Ash-Memory Fissure",
+      "territory": "JR-D",
+      "destinationArea": "LA",
+      "linkClass": "L"
+    },
+    {
+      "id": "JR-E-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-E"
+    },
+    {
+      "id": "JR-E-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-E"
+    },
+    {
+      "id": "JR-E-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-E"
+    },
+    {
+      "id": "JR-E-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Mist-Forest Ledge",
+      "territory": "JR-E"
+    },
+    {
+      "id": "JR-E-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Split Cliff Path",
+      "territory": "JR-E"
+    },
+    {
+      "id": "JR-E-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Cloudfang Shelf",
+      "territory": "JR-E"
+    },
+    {
+      "id": "JR-E-P-VE",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Condensation Spillway",
+      "territory": "JR-E",
+      "destinationArea": "VE",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-E-P-DR",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Cliff Door",
+      "territory": "JR-E",
+      "destinationArea": "DR",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-E-P-VD",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Geometric Aperture",
+      "territory": "JR-E",
+      "destinationArea": "VD",
+      "linkClass": "L"
+    },
+    {
+      "id": "JR-F-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-F"
+    },
+    {
+      "id": "JR-F-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-F"
+    },
+    {
+      "id": "JR-F-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-F"
+    },
+    {
+      "id": "JR-F-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Cracked Lava Terrace",
+      "territory": "JR-F"
+    },
+    {
+      "id": "JR-F-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Jungle Talus Shelf",
+      "territory": "JR-F"
+    },
+    {
+      "id": "JR-F-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Ashfall Junction",
+      "territory": "JR-F"
+    },
+    {
+      "id": "JR-F-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Abandoned Ridge Cache",
+      "territory": "JR-F"
+    },
+    {
+      "id": "JR-F-P-GW",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Adopted Lava Tube",
+      "territory": "JR-F",
+      "destinationArea": "GW",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-F-P-VC",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Furnace-Draft Cleft",
+      "territory": "JR-F",
+      "destinationArea": "VC",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-F-P-VE",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Root-and-Water Breach",
+      "territory": "JR-F",
+      "destinationArea": "VE",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-G-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-G"
+    },
+    {
+      "id": "JR-G-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-G"
+    },
+    {
+      "id": "JR-G-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-G"
+    },
+    {
+      "id": "JR-G-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Root Bridge Ravine",
+      "territory": "JR-G"
+    },
+    {
+      "id": "JR-G-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Broken Saddle Path",
+      "territory": "JR-G"
+    },
+    {
+      "id": "JR-G-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Splitroot Nexus",
+      "territory": "JR-G"
+    },
+    {
+      "id": "JR-G-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Old Route-Marker Shrine",
+      "territory": "JR-G"
+    },
+    {
+      "id": "JR-G-P-BK",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Root-Opened Chamber",
+      "territory": "JR-G",
+      "destinationArea": "BK",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-G-P-GW",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Predatory Tunnel",
+      "territory": "JR-G",
+      "destinationArea": "GW",
+      "linkClass": "P"
+    },
+    {
+      "id": "JR-G-P-SH",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Fault Slit",
+      "territory": "JR-G",
+      "destinationArea": "SH",
+      "linkClass": "L"
+    }
+  ],
+  "edges": [
+    {
+      "from": "JR-A-I1",
+      "to": "JR-A-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-A-I2",
+      "to": "JR-A-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-A-I3",
+      "to": "JR-A-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-A-I4",
+      "to": "JR-A-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-A-O1",
+      "to": "JR-A-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-A-O2",
+      "to": "JR-A-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-A-O1",
+      "to": "JR-A-R",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-A-H",
+      "to": "JR-A-P-BK",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-A-P-BK",
+      "to": "BK-A1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-A-H",
+      "to": "JR-A-P-GW",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-A-P-GW",
+      "to": "GW-A1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-A-H",
+      "to": "JR-A-P-VE",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-A-P-VE",
+      "to": "VE-A1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-B-I1",
+      "to": "JR-B-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-B-I2",
+      "to": "JR-B-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-B-I3",
+      "to": "JR-B-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-B-I4",
+      "to": "JR-B-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-B-O1",
+      "to": "JR-B-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-B-O2",
+      "to": "JR-B-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-B-O2",
+      "to": "JR-B-R",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-B-H",
+      "to": "JR-B-P-VE",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-B-P-VE",
+      "to": "VE-B1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-B-H",
+      "to": "JR-B-P-DR",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-B-P-DR",
+      "to": "DR-B1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-B-H",
+      "to": "JR-B-P-VC",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-B-P-VC",
+      "to": "VC-B1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-C-I1",
+      "to": "JR-C-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-C-I2",
+      "to": "JR-C-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-C-I3",
+      "to": "JR-C-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-C-I4",
+      "to": "JR-C-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-C-O1",
+      "to": "JR-C-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-C-O2",
+      "to": "JR-C-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-C-O2",
+      "to": "JR-C-R",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-C-H",
+      "to": "JR-C-P-BK",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-C-P-BK",
+      "to": "BK-C1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-C-H",
+      "to": "JR-C-P-DR",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-C-P-DR",
+      "to": "DR-C1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-C-H",
+      "to": "JR-C-P-GW",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-C-P-GW",
+      "to": "GW-C1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-D-I1",
+      "to": "JR-D-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-D-I2",
+      "to": "JR-D-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-D-I3",
+      "to": "JR-D-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-D-I4",
+      "to": "JR-D-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-D-O1",
+      "to": "JR-D-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-D-O2",
+      "to": "JR-D-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-D-O1",
+      "to": "JR-D-R",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-D-H",
+      "to": "JR-D-P-DR",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-D-P-DR",
+      "to": "DR-D1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-D-H",
+      "to": "JR-D-P-VC",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-D-P-VC",
+      "to": "VC-D1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-D-H",
+      "to": "JR-D-P-LA",
+      "class": "limited",
+      "mode": "hidden"
+    },
+    {
+      "from": "JR-D-P-LA",
+      "to": "LA-D1",
+      "class": "limited",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-E-I1",
+      "to": "JR-E-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-E-I2",
+      "to": "JR-E-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-E-I3",
+      "to": "JR-E-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-E-O1",
+      "to": "JR-E-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-E-O2",
+      "to": "JR-E-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-E-H",
+      "to": "JR-E-P-VE",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-E-P-VE",
+      "to": "VE-E1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-E-H",
+      "to": "JR-E-P-DR",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-E-P-DR",
+      "to": "DR-E1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-E-O2",
+      "to": "JR-E-P-VD",
+      "class": "limited",
+      "mode": "hidden"
+    },
+    {
+      "from": "JR-E-P-VD",
+      "to": "VD-E1",
+      "class": "limited",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-F-I1",
+      "to": "JR-F-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-F-I2",
+      "to": "JR-F-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-F-I3",
+      "to": "JR-F-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-F-O1",
+      "to": "JR-F-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-F-O2",
+      "to": "JR-F-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-F-O1",
+      "to": "JR-F-R",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-F-H",
+      "to": "JR-F-P-GW",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-F-P-GW",
+      "to": "GW-F1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-F-H",
+      "to": "JR-F-P-VC",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-F-P-VC",
+      "to": "VC-F1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-F-H",
+      "to": "JR-F-P-VE",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-F-P-VE",
+      "to": "VE-F1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-G-I1",
+      "to": "JR-G-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-G-I2",
+      "to": "JR-G-O2",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-G-I3",
+      "to": "JR-G-O1",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-G-O1",
+      "to": "JR-G-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-G-O2",
+      "to": "JR-G-H",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-G-O2",
+      "to": "JR-G-R",
+      "class": "internal",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-G-H",
+      "to": "JR-G-P-BK",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-G-P-BK",
+      "to": "BK-G1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-G-H",
+      "to": "JR-G-P-GW",
+      "class": "primary",
+      "mode": "ordinary"
+    },
+    {
+      "from": "JR-G-P-GW",
+      "to": "GW-G1",
+      "class": "primary",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-G-H",
+      "to": "JR-G-P-SH",
+      "class": "limited",
+      "mode": "hidden"
+    },
+    {
+      "from": "JR-G-P-SH",
+      "to": "SH-G1",
+      "class": "limited",
+      "mode": "boundary"
+    },
+    {
+      "from": "JR-A-H",
+      "to": "JR-B-O2",
+      "class": "limited",
+      "mode": "limited-surface",
+      "closes": "day38"
+    },
+    {
+      "from": "JR-C-H",
+      "to": "JR-D-O1",
+      "class": "limited",
+      "mode": "dangerous-surface",
+      "closes": "day38"
+    },
+    {
+      "from": "JR-E-H",
+      "to": "JR-F-O2",
+      "class": "limited",
+      "mode": "social-guide",
+      "closes": "day38"
+    },
+    {
+      "from": "JR-G-H",
+      "to": "JR-A-O2",
+      "class": "limited",
+      "mode": "hidden-surface",
+      "closes": "day38"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "jr-b-hub-v1",
+  "authoringStatus": "candidate-pre-render",
+  "topologyBinding": {"node":"JR-B-H","incoming":["JR-B-O1","JR-B-O2"],"outgoing":["JR-B-P-VE","JR-B-P-DR","JR-B-P-VC"]},
+  "assetProfile": "ashen-volcano-v1",
+  "grid": {"type":"square","size":100,"distance":5,"units":"ft"},
+  "dimensions": {"width":50,"height":44,"units":"grid-cells"},
+  "theme": "fractured canopy shelf around a massive tree with ecological, engineered, and vent routes",
+  "areas": [
+    {"id":"approach-o1","type":"entrance-zone","x":3,"y":32,"width":12,"height":8},
+    {"id":"approach-o2","type":"entrance-zone","x":34,"y":34,"width":10,"height":7},
+    {"id":"central-shelf","type":"decision-space","x":17,"y":18,"width":17,"height":14},
+    {"id":"canopy-gap","type":"drop-zone","x":14,"y":10,"width":12,"height":10},
+    {"id":"massive-tree-base","type":"landmark","x":24,"y":12,"width":11,"height":12},
+    {"id":"ve-living-arch","type":"route-preview","x":3,"y":6,"width":12,"height":9},
+    {"id":"dr-cliff-stair","type":"route-preview","x":36,"y":11,"width":11,"height":11},
+    {"id":"vc-warm-throat","type":"route-preview","x":31,"y":2,"width":10,"height":8},
+    {"id":"west-perch","type":"side-position","x":8,"y":19,"width":7,"height":7}
+  ],
+  "connections": [
+    {"id":"o1-to-shelf","from":"approach-o1","to":"central-shelf","type":"broken-canopy-path"},
+    {"id":"o2-to-shelf","from":"approach-o2","to":"central-shelf","type":"root-and-ledge-ascent"},
+    {"id":"shelf-to-ve","from":"central-shelf","to":"ve-living-arch","type":"root-bridge"},
+    {"id":"shelf-to-dr","from":"central-shelf","to":"dr-cliff-stair","type":"stone-switchback"},
+    {"id":"shelf-to-vc","from":"central-shelf","to":"vc-warm-throat","type":"narrow-vertical-ledges"},
+    {"id":"shelf-to-perch","from":"central-shelf","to":"west-perch","type":"narrow-branch"}
+  ],
+  "terrain": [
+    {"id":"shelf-rock","type":"semantic","semanticId":"terrain.volcanic.rocky","areas":["central-shelf","dr-cliff-stair","vc-warm-throat"]},
+    {"id":"jungle-moss","type":"semantic","semanticId":"terrain.jungle.moss","areas":["approach-o1","approach-o2","ve-living-arch","west-perch"]},
+    {"id":"dry-broken-edges","type":"semantic","semanticId":"terrain.volcanic.gravel","area":"canopy-gap"},
+    {"id":"dr-slab-preview","type":"semantic","semanticId":"dwarven.floor.slab","area":"dr-cliff-stair"}
+  ],
+  "features": [
+    {"id":"tree-landmark","type":"semantic-object-cluster","semanticIds":["vegetation.tree.massive","vegetation.root.exposed"],"area":"massive-tree-base"},
+    {"id":"green-route-frame","type":"semantic-object-cluster","semanticIds":["vegetation.fern","vegetation.moss.swamp","elven.object.vines"],"area":"ve-living-arch"},
+    {"id":"dr-engineering-preview","type":"semantic-object-cluster","semanticIds":["dwarven.object.pipe","dwarven.object.gears"],"area":"dr-cliff-stair"},
+    {"id":"vent-soot-marker","type":"ash-and-worked-stone","semanticIds":["object.ash.pile","portal.threshold.basic"],"area":"vc-warm-throat"}
+  ],
+  "entrances": [
+    {"id":"from-o1","area":"approach-o1","topologyNode":"JR-B-O1","edge":"southwest"},
+    {"id":"from-o2","area":"approach-o2","topologyNode":"JR-B-O2","edge":"southeast"}
+  ],
+  "exits": [
+    {"id":"to-ve","area":"ve-living-arch","topologyNode":"JR-B-P-VE","edge":"northwest"},
+    {"id":"to-dr","area":"dr-cliff-stair","topologyNode":"JR-B-P-DR","edge":"east"},
+    {"id":"to-vc","area":"vc-warm-throat","topologyNode":"JR-B-P-VC","edge":"north"}
+  ],
+  "secrets": [],
+  "elevationBands": [
+    {"id":"lower-root-entry","relativeFeet":0,"areas":["approach-o2"]},
+    {"id":"main-canopy-shelf","relativeFeet":20,"areas":["approach-o1","central-shelf","massive-tree-base","west-perch","dr-cliff-stair"]},
+    {"id":"upper-vent-and-green-arches","relativeFeet":35,"areas":["ve-living-arch","vc-warm-throat"]},
+    {"id":"canopy-drop","relativeFeet":-25,"areas":["canopy-gap"]}
+  ],
+  "routeCues": [
+    {"exit":"to-ve","cues":["living root arch","cool damp air","green aligned growth"]},
+    {"exit":"to-dr","cues":["square-cut stone","broad stair","pipes and mechanical fragments"]},
+    {"exit":"to-vc","cues":["warm rising draft","soot","narrow worked footholds and small-scale signs"]}
+  ],
+  "tacticalZones": [
+    {"id":"central-tree-cover","area":"massive-tree-base","purpose":"Breaks sightlines without blocking movement around the hub."},
+    {"id":"canopy-gap-edge","area":"canopy-gap","purpose":"Fall-risk and movement constraint with routes around both sides."},
+    {"id":"west-perch-view","area":"west-perch","purpose":"Observation of two route arms but not all three."}
+  ],
+  "spotlightZones": [{"id":"crownbreak-center","area":"central-shelf","purpose":"Visible multi-level decision space around the landmark tree."}],
+  "notes": [
+    "The canopy gap must not become the only crossing between arrivals and exits.",
+    "The VC preview is deliberately narrow but remains only a preview; do not strand large parties inside the hub.",
+    "No detailed encounter is authored in this candidate blueprint."
+  ]
+}

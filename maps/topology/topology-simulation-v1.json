@@ -1,0 +1,404 @@
+{
+  "id": "topology-simulation-v1",
+  "status": "map-designer-analysis",
+  "topology": "maps/topology/full-volcano-v1.json",
+  "placementModel": {
+    "lockedAssignments": false,
+    "balancedSearchRuns": 100,
+    "zeroViolationRuns": 100,
+    "threatScale": {
+      "inferior": 1,
+      "peer": 2,
+      "superior": 3,
+      "overmatch": 4
+    },
+    "territoryThreatSummary": {
+      "A": {
+        "mean": 2.34,
+        "min": 1.5,
+        "max": 2.75
+      },
+      "B": {
+        "mean": 2.42,
+        "min": 1.75,
+        "max": 2.75
+      },
+      "C": {
+        "mean": 2.257,
+        "min": 1.5,
+        "max": 2.75
+      },
+      "D": {
+        "mean": 2.39,
+        "min": 1.75,
+        "max": 2.75
+      },
+      "E": {
+        "mean": 2.4,
+        "min": 1.667,
+        "max": 2.667
+      },
+      "F": {
+        "mean": 2.157,
+        "min": 1.667,
+        "max": 2.667
+      },
+      "G": {
+        "mean": 2.567,
+        "min": 2,
+        "max": 2.667
+      }
+    }
+  },
+  "graph": {
+    "nodes": 193,
+    "edges": 281,
+    "reliableMainComponentNodes": 185,
+    "strategicEntryToThresholdNodeCut": 3,
+    "reliableInsertionBestDistanceRange": [
+      11,
+      12
+    ],
+    "allRouteInsertionBestDistanceRange": [
+      7,
+      9
+    ],
+    "contractions": {
+      "day31": {
+        "nodes": 162,
+        "edges": 250
+      },
+      "day38": {
+        "nodes": 148,
+        "edges": 231
+      },
+      "day45": {
+        "nodes": 112,
+        "edges": 182
+      },
+      "day52": {
+        "nodes": 33,
+        "edges": 40,
+        "connected": true
+      }
+    }
+  },
+  "qualificationFlow": {
+    "simulatedPaths": 2500,
+    "meanReliablePathLength": 9.32,
+    "thresholdCounts": {
+      "CR-O1": 1113,
+      "CR-O2": 718,
+      "CR-O3": 669
+    },
+    "thresholdShares": {
+      "CR-O1": 0.4452,
+      "CR-O2": 0.2872,
+      "CR-O3": 0.2676
+    },
+    "topFlowNodes": [
+      {
+        "node": "CU-H1",
+        "count": 1113,
+        "name": "Furnace Rim",
+        "area": "CU",
+        "role": "hub"
+      },
+      {
+        "node": "CU-T1",
+        "count": 1113,
+        "name": "Furnace Causeway",
+        "area": "CU",
+        "role": "threshold-approach"
+      },
+      {
+        "node": "CU-H2",
+        "count": 718,
+        "name": "Obsidian Crown",
+        "area": "CU",
+        "role": "hub"
+      },
+      {
+        "node": "CU-T2",
+        "count": 718,
+        "name": "Crater Teeth",
+        "area": "CU",
+        "role": "threshold-approach"
+      },
+      {
+        "node": "SH-H2",
+        "count": 679,
+        "name": "Suspended Ward",
+        "area": "SH",
+        "role": "hub"
+      },
+      {
+        "node": "SH-H4",
+        "count": 669,
+        "name": "Crown Fracture",
+        "area": "SH",
+        "role": "hub"
+      },
+      {
+        "node": "CU-H3",
+        "count": 669,
+        "name": "Steam Crown",
+        "area": "CU",
+        "role": "hub"
+      },
+      {
+        "node": "CU-T3",
+        "count": 669,
+        "name": "Ash Crown Stair",
+        "area": "CU",
+        "role": "threshold-approach"
+      },
+      {
+        "node": "SH-H3",
+        "count": 644,
+        "name": "Red Rift",
+        "area": "SH",
+        "role": "hub"
+      },
+      {
+        "node": "DR-H2",
+        "count": 578,
+        "name": "Haulage Exchange",
+        "area": "DR",
+        "role": "hub"
+      },
+      {
+        "node": "EK-H2",
+        "count": 434,
+        "name": "Chainforge Reach",
+        "area": "EK",
+        "role": "hub"
+      },
+      {
+        "node": "VC-H1",
+        "count": 430,
+        "name": "Copperdraft Gate",
+        "area": "VC",
+        "role": "hub"
+      },
+      {
+        "node": "GW-H3",
+        "count": 425,
+        "name": "Split Jaw",
+        "area": "GW",
+        "role": "hub"
+      },
+      {
+        "node": "GW-H1",
+        "count": 406,
+        "name": "Molt Galleries",
+        "area": "GW",
+        "role": "hub"
+      },
+      {
+        "node": "SH-H1",
+        "count": 325,
+        "name": "Broken Aquifer",
+        "area": "SH",
+        "role": "hub"
+      },
+      {
+        "node": "VE-H2",
+        "count": 288,
+        "name": "Cloudroot Bowl",
+        "area": "VE",
+        "role": "hub"
+      },
+      {
+        "node": "DR-H1",
+        "count": 270,
+        "name": "Reservoir Crown",
+        "area": "DR",
+        "role": "hub"
+      },
+      {
+        "node": "VC-H3",
+        "count": 165,
+        "name": "Smokeweft Gate",
+        "area": "VC",
+        "role": "hub"
+      },
+      {
+        "node": "DR-H3",
+        "count": 147,
+        "name": "Cliff Lift Ward",
+        "area": "DR",
+        "role": "hub"
+      },
+      {
+        "node": "EK-H1",
+        "count": 142,
+        "name": "Basalt Concord",
+        "area": "EK",
+        "role": "hub"
+      },
+      {
+        "node": "VE-H1",
+        "count": 124,
+        "name": "Rainvault Basin",
+        "area": "VE",
+        "role": "hub"
+      },
+      {
+        "node": "EK-H3",
+        "count": 74,
+        "name": "Ember Stair",
+        "area": "EK",
+        "role": "hub"
+      }
+    ],
+    "topStrategicBetweenness": [
+      {
+        "node": "SH-H4",
+        "betweenness": 0.1921,
+        "name": "Crown Fracture",
+        "area": "SH",
+        "role": "hub"
+      },
+      {
+        "node": "SH-H2",
+        "betweenness": 0.1749,
+        "name": "Suspended Ward",
+        "area": "SH",
+        "role": "hub"
+      },
+      {
+        "node": "CU-H1",
+        "betweenness": 0.1412,
+        "name": "Furnace Rim",
+        "area": "CU",
+        "role": "hub"
+      },
+      {
+        "node": "SH-H3",
+        "betweenness": 0.1381,
+        "name": "Red Rift",
+        "area": "SH",
+        "role": "hub"
+      },
+      {
+        "node": "DR-H1",
+        "betweenness": 0.1348,
+        "name": "Reservoir Crown",
+        "area": "DR",
+        "role": "hub"
+      },
+      {
+        "node": "SH-H1",
+        "betweenness": 0.1324,
+        "name": "Broken Aquifer",
+        "area": "SH",
+        "role": "hub"
+      },
+      {
+        "node": "DR-H3",
+        "betweenness": 0.1279,
+        "name": "Cliff Lift Ward",
+        "area": "DR",
+        "role": "hub"
+      },
+      {
+        "node": "CU-H3",
+        "betweenness": 0.1269,
+        "name": "Steam Crown",
+        "area": "CU",
+        "role": "hub"
+      },
+      {
+        "node": "VD-H3",
+        "betweenness": 0.1163,
+        "name": "Starfold Axis",
+        "area": "VD",
+        "role": "hub"
+      },
+      {
+        "node": "DR-H2",
+        "betweenness": 0.1118,
+        "name": "Haulage Exchange",
+        "area": "DR",
+        "role": "hub"
+      },
+      {
+        "node": "VD-H1",
+        "betweenness": 0.1063,
+        "name": "Root Meridian",
+        "area": "VD",
+        "role": "hub"
+      },
+      {
+        "node": "GW-H1",
+        "betweenness": 0.0963,
+        "name": "Molt Galleries",
+        "area": "GW",
+        "role": "hub"
+      },
+      {
+        "node": "CU-H2",
+        "betweenness": 0.0961,
+        "name": "Obsidian Crown",
+        "area": "CU",
+        "role": "hub"
+      },
+      {
+        "node": "VE-H1",
+        "betweenness": 0.087,
+        "name": "Rainvault Basin",
+        "area": "VE",
+        "role": "hub"
+      },
+      {
+        "node": "GW-H3",
+        "betweenness": 0.0857,
+        "name": "Split Jaw",
+        "area": "GW",
+        "role": "hub"
+      },
+      {
+        "node": "VD-H2",
+        "betweenness": 0.0836,
+        "name": "Glass Observatory",
+        "area": "VD",
+        "role": "hub"
+      },
+      {
+        "node": "VE-H2",
+        "betweenness": 0.0753,
+        "name": "Cloudroot Bowl",
+        "area": "VE",
+        "role": "hub"
+      },
+      {
+        "node": "EK-H2",
+        "betweenness": 0.0743,
+        "name": "Chainforge Reach",
+        "area": "EK",
+        "role": "hub"
+      },
+      {
+        "node": "VC-H3",
+        "betweenness": 0.0741,
+        "name": "Smokeweft Gate",
+        "area": "VC",
+        "role": "hub"
+      },
+      {
+        "node": "LA-H1",
+        "betweenness": 0.0716,
+        "name": "Echo Cloister",
+        "area": "LA",
+        "role": "hub"
+      }
+    ],
+    "pathOrigin": "territory-hub-after-local-dispersal"
+  },
+  "notes": [
+    "Placement simulations use suitability and threat constraints from campaign/teams/contestant-field-matrix.md and do not lock exact insertions.",
+    "Qualification-flow simulation models route pressure, not full gem-hunt behavior.",
+    "The Shattered Heart DR landing correction is incorporated in the topology source."
+  ]
+}

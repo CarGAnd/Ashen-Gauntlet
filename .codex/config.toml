@@ -1,0 +1,9 @@
+[mcp_servers.dungeondraft]
+command = "D:\\VTT\\FoundryVTT-Campaigns\\Ashen Gauntlet\\tools\\dungeondraft\\.venv\\Scripts\\dungeondraft-mcp.exe"
+cwd = "D:\\VTT\\FoundryVTT-Campaigns\\Ashen Gauntlet"
+env = { DD_BRIDGE_HOST = "127.0.0.1", DD_BRIDGE_PORT = "8787" }
+enabled = true
+required = false
+startup_timeout_sec = 15
+tool_timeout_sec = 120
+default_tools_approval_mode = "approve"

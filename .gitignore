@@ -57,3 +57,6 @@ foundry-data/
 maps/exports/temp/
 maps/exports/_scratch/
 
+# Project-local Dungeondraft integration state
+tools/dungeondraft/.venv/
+tools/dungeondraft/mods/dungeondraft-mcp-bridge/

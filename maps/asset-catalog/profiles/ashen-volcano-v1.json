@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "profileId": "ashen-volcano-v1",
+  "status": "approved-production-planning-baseline",
+  "description": "Shared visual profile for campaign-facing Ashen Gauntlet maps. Uses semantic IDs only; exact Dungeondraft URIs remain in classification files.",
+  "validatedOn": "2026-09-09",
+  "mappingFiles": ["maps/asset-catalog/classifications/core.json", "maps/asset-catalog/classifications/volcanic-v1.json"],
+  "global": {
+    "volcanicGround": ["terrain.volcanic.rocky", "terrain.volcanic.gravel", "floor.earth.cracked"],
+    "elevation": ["elevation.path.cliff", "elevation.path.stairs-stone"],
+    "debris": ["rubble.basic", "ruin.debris.basic", "object.ash.pile"],
+    "lighting": ["light.soft.basic", "light.point.basic", "light.fragments.basic"]
+  },
+  "styles": {
+    "jungleSurface": {
+      "terrain": ["terrain.jungle.moss", "terrain.jungle.dirt", "terrain.jungle.swamp", "terrain.volcanic.rocky"],
+      "vegetation": ["vegetation.tree.massive", "vegetation.tree.mangrove", "vegetation.root.exposed", "vegetation.fern", "vegetation.moss.swamp"],
+      "waterDetail": ["water.detail.swamp-puddle"],
+      "intent": "Dark wet basalt under dense green growth; vegetation frames routes rather than filling every playable square."
+    },
+    "ancientRuins": {
+      "floors": ["ruin.floor.roman-worn", "ruin.floor.worn-cobble", "floor.stone.basic"],
+      "debris": ["ruin.debris.basic", "rubble.basic"],
+      "intent": "Weathered pre-volcanic civic stone, ash-silted and physically older than dwarven or elven intrusions."
+    },
+    "dwarven": {
+      "walls": ["dwarven.wall.heavy"],
+      "floors": ["dwarven.floor.slab", "floor.stone.basic"],
+      "infrastructure": ["dwarven.path.rail", "dwarven.object.pipe", "dwarven.object.gears", "dwarven.object.forge"],
+      "intent": "Rectilinear monumental engineering, heavy load-bearing forms, visible transport and mechanical purpose."
+    },
+    "elven": {
+      "floors": ["elven.floor.ornate", "floor.stone.basic"],
+      "architecture": ["elven.object.bridge", "elven.object.stairs", "elven.object.rotonda", "elven.object.vines"],
+      "intent": "Curved pale ceremonial geometry integrated with water and living growth; precise rather than ruined-by-default."
+    },
+    "burrows": {
+      "floors": ["burrow.floor.cave", "terrain.jungle.dirt", "terrain.volcanic.rocky"],
+      "features": ["burrow.object.cave-hole", "burrow.object.monster-bones", "vegetation.root.exposed"],
+      "intent": "Asymmetrical creature-cut space with abrasion, roots, bones, and geology; avoid architectural right angles."
+    },
+    "volcanicDeep": {
+      "terrain": ["terrain.volcanic.rocky", "terrain.volcanic.gravel", "floor.earth.cracked"],
+      "materials": ["material.volcanic.rock", "material.lava.surface"],
+      "debris": ["object.ash.pile", "rock.lava.basic"],
+      "intent": "Charcoal basalt and ash dominate; active lava is a high-contrast hazard/accent rather than a universal floor texture."
+    }
+  },
+  "waterPolicy": {
+    "broadSurface": "native-dungeondraft-water-layer-or-equivalent-operation",
+    "assetUriStatus": "No general river/lake surface URI exists in the current raw asset catalog; do not fabricate one.",
+    "detailSemanticIds": ["water.detail.swamp-puddle", "elven.object.bridge"]
+  },
+  "transitionRules": [
+    "Show at least two layers at major boundaries: geology plus the civilization/ecology intruding into it.",
+    "Use debris, roots, ash, water, rails, broken stairs, or wall geometry to communicate which layer cut through which.",
+    "Do not switch visual themes at a clean doorway unless the fiction specifically calls for an intact sealed complex.",
+    "Route families should be readable through material and geometry before labels or journal text are required."
+  ],
+  "lightingIntent": {
+    "jungle": "Diffuse canopy light with darker ravines and wet reflective pockets.",
+    "dwarven": "Low ambient light with warm industrial/fire accents when active systems survive.",
+    "elven": "Cool or pale magical accents with controlled pools of light and visible geometry.",
+    "volcanic": "Warm red-orange hazard glow against otherwise dark rock; avoid saturating the entire map."
+  }
+}

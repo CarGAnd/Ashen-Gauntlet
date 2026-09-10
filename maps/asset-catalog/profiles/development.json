@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "profileId": "development",
+  "description": "Known-good built-in defaults for disposable and development map generation.",
+  "validatedOn": "2026-09-09",
+  "validationMethod": "Read-only Dungeondraft MCP list_assets lookup",
+  "defaults": {
+    "roomFloor": {
+      "semanticId": "floor.stone.basic",
+      "operation": "build_room"
+    },
+    "wall": {
+      "semanticId": "wall.stone.basic",
+      "operation": "build_room"
+    },
+    "door": {
+      "semanticId": "door.basic",
+      "operation": "add_portal"
+    },
+    "corridorFloor": {
+      "semanticId": "floor.corridor.brick",
+      "operation": "place_pattern"
+    },
+    "rubble": {
+      "semanticId": "rubble.basic",
+      "operation": "place_object"
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "description": "Initial project-owned semantic mappings for common Ashen Gauntlet map-generation needs.",
+  "mappings": [
+    {
+      "semanticId": "floor.stone.basic",
+      "classification": "floors/patterns",
+      "name": "Basic cut-stone floor",
+      "exactDungeondraftUri": "res://textures/tilesets/simple/tileset_cut_stone.png",
+      "originalDungeondraftCategory": "Simple Tiles",
+      "assetKind": "simple-tile",
+      "compatibleMcpOperations": ["place_pattern", "build_room"],
+      "tags": ["floor", "stone", "room"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "floor.earth.cracked",
+      "classification": "floors/patterns",
+      "name": "Cracked earth terrain",
+      "exactDungeondraftUri": "res://textures/terrain/terrain_cracked_earth.png",
+      "originalDungeondraftCategory": "Terrain",
+      "assetKind": "terrain",
+      "compatibleMcpOperations": ["set_terrain_slot", "fill_terrain", "fill_region", "paint_terrain", "paint_path"],
+      "tags": ["floor", "earth", "cracked", "terrain"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "floor.corridor.brick",
+      "classification": "floors/patterns",
+      "name": "Running-brick corridor floor",
+      "exactDungeondraftUri": "res://textures/tilesets/simple/tileset_brick_running.png",
+      "originalDungeondraftCategory": "Simple Tiles",
+      "assetKind": "simple-tile",
+      "compatibleMcpOperations": ["place_pattern", "build_room"],
+      "tags": ["floor", "brick", "corridor"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "wall.stone.basic",
+      "classification": "walls",
+      "name": "Basic stone wall",
+      "exactDungeondraftUri": "res://textures/walls/stone.png",
+      "originalDungeondraftCategory": "Walls",
+      "assetKind": "wall",
+      "compatibleMcpOperations": ["draw_wall", "build_room"],
+      "tags": ["wall", "stone"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "door.basic",
+      "classification": "doors/portals",
+      "name": "Basic door 00",
+      "exactDungeondraftUri": "res://textures/portals/door_00.png",
+      "originalDungeondraftCategory": "Portals",
+      "assetKind": "portal",
+      "compatibleMcpOperations": ["add_portal"],
+      "tags": ["door", "portal"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "path.stone.basic",
+      "classification": "paths",
+      "name": "Basic stone path",
+      "exactDungeondraftUri": "res://textures/paths/stone.png",
+      "originalDungeondraftCategory": "Paths",
+      "assetKind": "path",
+      "compatibleMcpOperations": ["draw_path"],
+      "tags": ["path", "stone"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "rock.lava.basic",
+      "classification": "rocks",
+      "name": "Basic lava rock",
+      "exactDungeondraftUri": "res://textures/objects/clutter/lava_rocks/rock_lava_01.png",
+      "originalDungeondraftCategory": "Objects",
+      "assetKind": "object",
+      "compatibleMcpOperations": ["place_object"],
+      "tags": ["rock", "lava", "clutter"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "rubble.basic",
+      "classification": "rubble",
+      "name": "Basic rubble",
+      "exactDungeondraftUri": "res://textures/objects/clutter/rubble/rubble_01.png",
+      "originalDungeondraftCategory": "Objects",
+      "assetKind": "object",
+      "compatibleMcpOperations": ["place_object"],
+      "tags": ["rubble", "debris", "clutter"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "vegetation.tree.large",
+      "classification": "vegetation",
+      "name": "Large green tree",
+      "exactDungeondraftUri": "res://textures/objects/vegetation/trees/tree_big_green_01.png",
+      "originalDungeondraftCategory": "Objects",
+      "assetKind": "object",
+      "compatibleMcpOperations": ["place_object"],
+      "tags": ["vegetation", "tree", "large", "green"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "furniture.chair.basic",
+      "classification": "furniture/objects",
+      "name": "Basic chair",
+      "exactDungeondraftUri": "res://textures/objects/furniture/chairs/chair_01.png",
+      "originalDungeondraftCategory": "Objects",
+      "assetKind": "object",
+      "compatibleMcpOperations": ["place_object"],
+      "tags": ["furniture", "chair"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "ruin.debris.basic",
+      "classification": "ruins/architecture",
+      "name": "Basic ruin debris",
+      "exactDungeondraftUri": "res://textures/objects/object_ruin_debris/debris_01.png",
+      "originalDungeondraftCategory": "Objects",
+      "assetKind": "object",
+      "compatibleMcpOperations": ["place_object"],
+      "tags": ["ruin", "architecture", "debris"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "ruin.architecture.battlement",
+      "classification": "ruins/architecture",
+      "name": "Battlement wall",
+      "exactDungeondraftUri": "res://textures/walls/battlements.png",
+      "originalDungeondraftCategory": "Walls",
+      "assetKind": "wall",
+      "compatibleMcpOperations": ["draw_wall", "build_room"],
+      "tags": ["ruin", "architecture", "battlement", "wall"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    },
+    {
+      "semanticId": "light.soft.basic",
+      "classification": "lights",
+      "name": "Basic soft light",
+      "exactDungeondraftUri": "res://textures/lights/soft.png",
+      "originalDungeondraftCategory": "Lights",
+      "assetKind": "light",
+      "compatibleMcpOperations": ["add_light"],
+      "tags": ["light", "soft"],
+      "validationStatus": "confirmed-by-mcp-list-assets"
+    }
+  ]
+}

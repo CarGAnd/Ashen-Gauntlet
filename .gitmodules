@@ -1,0 +1,3 @@
+[submodule "tools/dungeondraft/vendor/dungeondraft-mcp"]
+	path = tools/dungeondraft/vendor/dungeondraft-mcp
+	url = https://github.com/brann-dev/dungeondraft-mcp.git

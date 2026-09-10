@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-09-09",
+  "catalogFile": "dungeondraft-built-in-assets.csv",
+  "catalogScope": "Built-in Dungeondraft assets exposed by the currently loaded asset registry",
+  "discovery": {
+    "mechanism": [
+      "mcp__dungeondraft__list_asset_categories",
+      "mcp__dungeondraft__list_assets"
+    ],
+    "pinnedImplementationCommit": "c5984a36f1be3f77b8f3be41d44a515f763797fd",
+    "mapMutationRequired": false,
+    "sourceClassificationRule": "URIs under res://textures/ are treated as Dungeondraft built-ins."
+  },
+  "totals": {
+    "assetsDiscovered": 1947,
+    "categoriesDiscovered": 14,
+    "nonBuiltInUriNamespacesObserved": 0
+  },
+  "categories": [
+    { "name": "Objects", "count": 1792 },
+    { "name": "Walls", "count": 10 },
+    { "name": "Paths", "count": 44 },
+    { "name": "Terrain", "count": 13 },
+    { "name": "Lights", "count": 3 },
+    { "name": "Portals", "count": 39 },
+    { "name": "Roofs", "count": 8 },
+    { "name": "Patterns", "count": 0 },
+    { "name": "Patterns Colorable", "count": 0 },
+    { "name": "Caves", "count": 2 },
+    { "name": "Materials", "count": 12 },
+    { "name": "Simple Tiles", "count": 22 },
+    { "name": "Smart Tiles", "count": 1 },
+    { "name": "Smart Tiles Double", "count": 1 }
+  ],
+  "bridgeLimitations": [
+    "No original asset tags",
+    "No image dimensions or default scale",
+    "No asset-pack identifier, name, author, version, license, or built-in/custom provenance flag",
+    "Search is a case-insensitive substring match against the asset URI only",
+    "Availability validation is registry listing, not placement or rendering"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "jr-a-hub-v1",
+  "authoringStatus": "candidate-pre-render",
+  "topologyBinding": {"node":"JR-A-H","incoming":["JR-A-O1","JR-A-O2"],"outgoing":["JR-A-P-BK","JR-A-P-GW","JR-A-P-VE"]},
+  "assetProfile": "ashen-volcano-v1",
+  "grid": {"type":"square","size":100,"distance":5,"units":"ft"},
+  "dimensions": {"width":52,"height":42,"units":"grid-cells"},
+  "theme": "wet volcanic jungle confluence with three materially distinct route families",
+  "areas": [
+    {"id":"approach-o1","type":"entrance-zone","x":2,"y":31,"width":12,"height":8},
+    {"id":"approach-o2","type":"entrance-zone","x":39,"y":29,"width":10,"height":8},
+    {"id":"central-basalt-island","type":"decision-space","x":18,"y":17,"width":17,"height":13},
+    {"id":"west-braided-water","type":"water-channel","x":8,"y":16,"width":11,"height":15},
+    {"id":"east-braided-water","type":"water-channel","x":34,"y":14,"width":9,"height":16},
+    {"id":"bk-sinkgate-preview","type":"route-preview","x":4,"y":5,"width":13,"height":9},
+    {"id":"gw-bore-preview","type":"route-preview","x":38,"y":5,"width":11,"height":10},
+    {"id":"ve-root-breach-preview","type":"route-preview","x":23,"y":1,"width":14,"height":9},
+    {"id":"north-overlook","type":"side-position","x":17,"y":7,"width":6,"height":6}
+  ],
+  "connections": [
+    {"id":"o1-to-island","from":"approach-o1","to":"central-basalt-island","type":"open-multi-crossing"},
+    {"id":"o2-to-island","from":"approach-o2","to":"central-basalt-island","type":"open-multi-crossing"},
+    {"id":"island-to-bk","from":"central-basalt-island","to":"bk-sinkgate-preview","type":"descending-flooded"},
+    {"id":"island-to-gw","from":"central-basalt-island","to":"gw-bore-preview","type":"rough-bore"},
+    {"id":"island-to-ve","from":"central-basalt-island","to":"ve-root-breach-preview","type":"ascending-root-slope"},
+    {"id":"island-to-overlook","from":"central-basalt-island","to":"north-overlook","type":"climbable-shelf"}
+  ],
+  "terrain": [
+    {"id":"basalt-core","type":"semantic","semanticId":"terrain.volcanic.rocky","area":"central-basalt-island"},
+    {"id":"moss-banks","type":"semantic","semanticId":"terrain.jungle.moss","areas":["approach-o1","approach-o2"]},
+    {"id":"muddy-water-edges","type":"semantic","semanticId":"terrain.jungle.swamp","areas":["west-braided-water","east-braided-water"]},
+    {"id":"bk-worn-paving","type":"semantic","semanticId":"ruin.floor.roman-worn","area":"bk-sinkgate-preview"},
+    {"id":"gw-cave-floor","type":"semantic","semanticId":"burrow.floor.cave","area":"gw-bore-preview"}
+  ],
+  "features": [
+    {"id":"massive-root-landmark","type":"semantic-object-cluster","semanticIds":["vegetation.root.exposed","vegetation.tree.massive"],"area":"central-basalt-island"},
+    {"id":"wet-jungle-frame","type":"semantic-object-cluster","semanticIds":["vegetation.fern","vegetation.moss.swamp","vegetation.tree.mangrove"],"areas":["approach-o1","approach-o2"]},
+    {"id":"gw-sign","type":"semantic-object-cluster","semanticIds":["burrow.object.cave-hole","burrow.object.monster-bones"],"area":"gw-bore-preview"},
+    {"id":"ve-sign","type":"semantic-object-cluster","semanticIds":["vegetation.root.exposed","elven.object.vines"],"area":"ve-root-breach-preview"}
+  ],
+  "entrances": [
+    {"id":"from-o1","area":"approach-o1","topologyNode":"JR-A-O1","edge":"southwest"},
+    {"id":"from-o2","area":"approach-o2","topologyNode":"JR-A-O2","edge":"southeast"}
+  ],
+  "exits": [
+    {"id":"to-bk","area":"bk-sinkgate-preview","topologyNode":"JR-A-P-BK","edge":"northwest"},
+    {"id":"to-gw","area":"gw-bore-preview","topologyNode":"JR-A-P-GW","edge":"northeast"},
+    {"id":"to-ve","area":"ve-root-breach-preview","topologyNode":"JR-A-P-VE","edge":"north"}
+  ],
+  "secrets": [],
+  "elevationBands": [
+    {"id":"low-waterline","relativeFeet":0,"areas":["west-braided-water","east-braided-water","bk-sinkgate-preview"]},
+    {"id":"mid-island","relativeFeet":10,"areas":["approach-o1","approach-o2","central-basalt-island","gw-bore-preview"]},
+    {"id":"upper-root-shelf","relativeFeet":25,"areas":["ve-root-breach-preview","north-overlook"]}
+  ],
+  "routeCues": [
+    {"exit":"to-bk","cues":["worn civic paving","descending waterline","cool still air"]},
+    {"exit":"to-gw","cues":["oversized irregular bore","churned mud","bones and animal abrasion"]},
+    {"exit":"to-ve","cues":["condensation","oversized green growth","root-framed ascent"]}
+  ],
+  "tacticalZones": [
+    {"id":"island-control","area":"central-basalt-island","purpose":"Central visibility without controlling all three exits."},
+    {"id":"west-crossings","area":"west-braided-water","purpose":"Multiple shallow crossings; movement cost without one mandatory bridge."},
+    {"id":"upper-overlook","area":"north-overlook","purpose":"Observation advantage with no direct exit control."}
+  ],
+  "spotlightZones": [{"id":"confluence-landmark","area":"central-basalt-island","purpose":"Strong audience-readable route-choice location."}],
+  "notes": [
+    "Broad water surfaces require native Dungeondraft water-layer support; do not substitute a fabricated texture URI.",
+    "The three exit previews should remain visible as different environmental systems from the central island.",
+    "No detailed encounter is authored in this candidate blueprint."
+  ]
+}

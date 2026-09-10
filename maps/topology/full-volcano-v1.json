@@ -1,0 +1,3559 @@
+{
+  "id": "full-volcano-v1",
+  "status": "accepted-project-baseline",
+  "documentation": "docs/map-design/full-volcano-topology-v1.md",
+  "defaultUndirected": true,
+  "sourceGraphs": [
+    "maps/topology/jungle-ring-v1.json",
+    "maps/topology/interior-mixing-v1.json",
+    "maps/topology/inner-convergence-v1.json"
+  ],
+  "nodes": [
+    {
+      "id": "JR-A-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-A",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-A-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-A",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-A-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-A",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-A-I4",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-A",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-A-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Flooded Trail Forks",
+      "territory": "JR-A",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-A-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Basalt Shelf",
+      "territory": "JR-A",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-A-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Raincoil Confluence",
+      "territory": "JR-A",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-A-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Drowned Observation Terrace",
+      "territory": "JR-A",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-A-P-BK",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Sinkgate",
+      "territory": "JR-A",
+      "destinationArea": "BK",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-A-P-GW",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Beast-Cut Tunnel",
+      "territory": "JR-A",
+      "destinationArea": "GW",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-A-P-VE",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Root-Choked Breach",
+      "territory": "JR-A",
+      "destinationArea": "VE",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-B",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-B",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-B",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-I4",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-B",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Fractured Canopy Shelf",
+      "territory": "JR-B",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Hanging-Root Descent",
+      "territory": "JR-B",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Crownbreak Shelf",
+      "territory": "JR-B",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Isolated Crown Shrine",
+      "territory": "JR-B",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-P-VE",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Elven Maintenance Breach",
+      "territory": "JR-B",
+      "destinationArea": "VE",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-P-DR",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Dwarven Survey Stair",
+      "territory": "JR-B",
+      "destinationArea": "DR",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-B-P-VC",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Ventilation Throat",
+      "territory": "JR-B",
+      "destinationArea": "VC",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-C",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-C",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-C",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-I4",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-C",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Cataract Shelf",
+      "territory": "JR-C",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Drowned Stair-Ravine",
+      "territory": "JR-C",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Blackwater Divide",
+      "territory": "JR-C",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Sealed Flood Chamber",
+      "territory": "JR-C",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-P-BK",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Collapsed Well-Road",
+      "territory": "JR-C",
+      "destinationArea": "BK",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-P-DR",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Drainage Gallery",
+      "territory": "JR-C",
+      "destinationArea": "DR",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-C-P-GW",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Water-Cut Burrow",
+      "territory": "JR-C",
+      "destinationArea": "GW",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-D",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-D",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-D",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-I4",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-D",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Steam-Scar Saddle",
+      "territory": "JR-D",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Ash Scrub Traverse",
+      "territory": "JR-D",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Emberridge Fork",
+      "territory": "JR-D",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Fumarole Overlook",
+      "territory": "JR-D",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-P-DR",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Haulage Tunnel",
+      "territory": "JR-D",
+      "destinationArea": "DR",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-P-VC",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Vent Chimney",
+      "territory": "JR-D",
+      "destinationArea": "VC",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-D-P-LA",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Ash-Memory Fissure",
+      "territory": "JR-D",
+      "destinationArea": "LA",
+      "linkClass": "L",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-E-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-E",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-E-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-E",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-E-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-E",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-E-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Mist-Forest Ledge",
+      "territory": "JR-E",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-E-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Split Cliff Path",
+      "territory": "JR-E",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-E-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Cloudfang Shelf",
+      "territory": "JR-E",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-E-P-VE",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Condensation Spillway",
+      "territory": "JR-E",
+      "destinationArea": "VE",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-E-P-DR",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Cliff Door",
+      "territory": "JR-E",
+      "destinationArea": "DR",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-E-P-VD",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Geometric Aperture",
+      "territory": "JR-E",
+      "destinationArea": "VD",
+      "linkClass": "L",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-F-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-F",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-F-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-F",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-F-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-F",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-F-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Cracked Lava Terrace",
+      "territory": "JR-F",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-F-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Jungle Talus Shelf",
+      "territory": "JR-F",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-F-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Ashfall Junction",
+      "territory": "JR-F",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-F-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Abandoned Ridge Cache",
+      "territory": "JR-F",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-F-P-GW",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Adopted Lava Tube",
+      "territory": "JR-F",
+      "destinationArea": "GW",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-F-P-VC",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Furnace-Draft Cleft",
+      "territory": "JR-F",
+      "destinationArea": "VC",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-F-P-VE",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Root-and-Water Breach",
+      "territory": "JR-F",
+      "destinationArea": "VE",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-G-I1",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-G",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-G-I2",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-G",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-G-I3",
+      "area": "JR",
+      "role": "insertion",
+      "closes": "day31",
+      "territory": "JR-G",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-G-O1",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Root Bridge Ravine",
+      "territory": "JR-G",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-G-O2",
+      "area": "JR",
+      "role": "traversal",
+      "closes": "day38",
+      "name": "Broken Saddle Path",
+      "territory": "JR-G",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-G-H",
+      "area": "JR",
+      "role": "hub",
+      "closes": "day45",
+      "name": "Splitroot Nexus",
+      "territory": "JR-G",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-G-R",
+      "area": "JR",
+      "role": "reward-dead-end",
+      "closes": "day31",
+      "name": "Old Route-Marker Shrine",
+      "territory": "JR-G",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-G-P-BK",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Root-Opened Chamber",
+      "territory": "JR-G",
+      "destinationArea": "BK",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-G-P-GW",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Predatory Tunnel",
+      "territory": "JR-G",
+      "destinationArea": "GW",
+      "linkClass": "P",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "JR-G-P-SH",
+      "area": "JR",
+      "role": "penetration",
+      "closes": "day45",
+      "name": "Fault Slit",
+      "territory": "JR-G",
+      "destinationArea": "SH",
+      "linkClass": "L",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "id": "BK-A1",
+      "area": "BK",
+      "role": "landing",
+      "closes": "day45",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "BK-C1",
+      "area": "BK",
+      "role": "landing",
+      "closes": "day45",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "BK-G1",
+      "area": "BK",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "BK-A2",
+      "area": "BK",
+      "role": "traversal",
+      "closes": "day45",
+      "name": "Flooded Lane",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "BK-C2",
+      "area": "BK",
+      "role": "traversal",
+      "closes": "day45",
+      "name": "Processional Hollow",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "BK-G2",
+      "area": "BK",
+      "role": "traversal",
+      "closes": "day52",
+      "name": "Rootbound Quarter",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "BK-H1",
+      "area": "BK",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Ashwell Crossing",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "BK-H2",
+      "area": "BK",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Ancestor Court",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "BK-H3",
+      "area": "BK",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Buried Gatehouse",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VE-A1",
+      "area": "VE",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VE-B1",
+      "area": "VE",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VE-E1",
+      "area": "VE",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VE-F1",
+      "area": "VE",
+      "role": "landing",
+      "closes": "day45",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VE-H1",
+      "area": "VE",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Rainvault Basin",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VE-H2",
+      "area": "VE",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Cloudroot Bowl",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VE-X1",
+      "area": "VE",
+      "role": "bridge",
+      "closes": "day52",
+      "name": "Crown Spillway",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "DR-B1",
+      "area": "DR",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "DR-C1",
+      "area": "DR",
+      "role": "landing",
+      "closes": "day45",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "DR-D1",
+      "area": "DR",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "DR-E1",
+      "area": "DR",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "DR-H1",
+      "area": "DR",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Reservoir Crown",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "DR-H2",
+      "area": "DR",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Haulage Exchange",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "DR-H3",
+      "area": "DR",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Cliff Lift Ward",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "GW-A1",
+      "area": "GW",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "GW-C1",
+      "area": "GW",
+      "role": "landing",
+      "closes": "day45",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "GW-F1",
+      "area": "GW",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "GW-G1",
+      "area": "GW",
+      "role": "landing",
+      "closes": "day45",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "GW-H1",
+      "area": "GW",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Molt Galleries",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "GW-H2",
+      "area": "GW",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Ribbed Descent",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "GW-H3",
+      "area": "GW",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Split Jaw",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VC-B1",
+      "area": "VC",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VC-D1",
+      "area": "VC",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VC-F1",
+      "area": "VC",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VC-H1",
+      "area": "VC",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Copperdraft Gate",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VC-H2",
+      "area": "VC",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Cinderstep Gate",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VC-H3",
+      "area": "VC",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Smokeweft Gate",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VC-S1",
+      "area": "VC",
+      "role": "social-hub",
+      "closes": "day52",
+      "name": "Smoke Market",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "id": "VD-BK1",
+      "area": "VD",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-VE1",
+      "area": "VD",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-VE2",
+      "area": "VD",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-DR1",
+      "area": "VD",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-DR2",
+      "area": "VD",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-GW1",
+      "area": "VD",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-VC1",
+      "area": "VD",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-E1",
+      "area": "VD",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-XE1",
+      "area": "VD",
+      "role": "bridge",
+      "closes": "day52",
+      "name": "Blind Meridian",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-H1",
+      "area": "VD",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Root Meridian",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-H2",
+      "area": "VD",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Glass Observatory",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VD-H3",
+      "area": "VD",
+      "role": "hub",
+      "closes": null,
+      "name": "Starfold Axis",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "LA-BK1",
+      "area": "LA",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "LA-VE1",
+      "area": "LA",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "LA-DR1",
+      "area": "LA",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "LA-D1",
+      "area": "LA",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "LA-VD1",
+      "area": "LA",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "LA-VD2",
+      "area": "LA",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "LA-XD1",
+      "area": "LA",
+      "role": "bridge",
+      "closes": "day52",
+      "name": "False Arrival",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "LA-H1",
+      "area": "LA",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Echo Cloister",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "LA-H2",
+      "area": "LA",
+      "role": "hub",
+      "closes": null,
+      "name": "Returning Gallery",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "LA-H3",
+      "area": "LA",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Ash Clock",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-VE1",
+      "area": "EK",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-DR1",
+      "area": "EK",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-DR2",
+      "area": "EK",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-GW1",
+      "area": "EK",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-GW2",
+      "area": "EK",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-VC1",
+      "area": "EK",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-VC2",
+      "area": "EK",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-VD1",
+      "area": "EK",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-H1",
+      "area": "EK",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Basalt Concord",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-H2",
+      "area": "EK",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Chainforge Reach",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "EK-H3",
+      "area": "EK",
+      "role": "hub",
+      "closes": null,
+      "name": "Ember Stair",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-BK1",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-BK2",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-VE1",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-VE2",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-DR1",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-DR2",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-GW1",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-GW2",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-VC1",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-VC2",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-G1",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-VD1",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-VD2",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-EK1",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-EK2",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-LA1",
+      "area": "SH",
+      "role": "landing",
+      "closes": "day52",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-XG1",
+      "area": "SH",
+      "role": "bridge",
+      "closes": "day52",
+      "name": "Split Scar",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-XG2",
+      "area": "SH",
+      "role": "bridge",
+      "closes": "day52",
+      "name": "Hanging Fault",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-H1",
+      "area": "SH",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Broken Aquifer",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-H2",
+      "area": "SH",
+      "role": "hub",
+      "closes": "day52",
+      "name": "Suspended Ward",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-H3",
+      "area": "SH",
+      "role": "hub",
+      "closes": null,
+      "name": "Red Rift",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-H4",
+      "area": "SH",
+      "role": "hub",
+      "closes": null,
+      "name": "Crown Fracture",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "SH-CROWN1",
+      "area": "SH",
+      "role": "exceptional-upper-connector",
+      "closes": null,
+      "name": "Crown Scar Traverse",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-VE1",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-DR1",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-GW1",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-VC1",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-VD1",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-LA1",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-EK1",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-EK2",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-SH1",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-SH2",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-SH3",
+      "area": "CU",
+      "role": "landing",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-H1",
+      "area": "CU",
+      "role": "hub",
+      "closes": null,
+      "name": "Furnace Rim",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-H2",
+      "area": "CU",
+      "role": "hub",
+      "closes": null,
+      "name": "Obsidian Crown",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-H3",
+      "area": "CU",
+      "role": "hub",
+      "closes": null,
+      "name": "Steam Crown",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-T1",
+      "area": "CU",
+      "role": "threshold-approach",
+      "closes": null,
+      "name": "Furnace Causeway",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-T2",
+      "area": "CU",
+      "role": "threshold-approach",
+      "closes": null,
+      "name": "Crater Teeth",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CU-T3",
+      "area": "CU",
+      "role": "threshold-approach",
+      "closes": null,
+      "name": "Ash Crown Stair",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "DR-CROWN1",
+      "area": "DR",
+      "role": "exceptional-upper-connector",
+      "closes": null,
+      "name": "Broken Sky Lift",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "VC-CROWN1",
+      "area": "VC",
+      "role": "exceptional-upper-connector",
+      "closes": null,
+      "name": "Needle Chimney",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CR-O1",
+      "area": "CR",
+      "role": "outer-threshold",
+      "closes": null,
+      "name": "Furnace Gate",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CR-O2",
+      "area": "CR",
+      "role": "outer-threshold",
+      "closes": null,
+      "name": "Crater Gate",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CR-O3",
+      "area": "CR",
+      "role": "outer-threshold",
+      "closes": null,
+      "name": "Crown Gate",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CR-S1",
+      "area": "CR",
+      "role": "gem-recovery-shrine",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CR-S2",
+      "area": "CR",
+      "role": "gem-recovery-shrine",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CR-S3",
+      "area": "CR",
+      "role": "gem-recovery-shrine",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CR-S4",
+      "area": "CR",
+      "role": "gem-recovery-shrine",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "id": "CR-S5",
+      "area": "CR",
+      "role": "gem-recovery-shrine",
+      "closes": null,
+      "sourceLayer": "inner-convergence-v1"
+    }
+  ],
+  "edges": [
+    {
+      "from": "JR-A-I1",
+      "to": "JR-A-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-I2",
+      "to": "JR-A-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-I3",
+      "to": "JR-A-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-I4",
+      "to": "JR-A-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-O1",
+      "to": "JR-A-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-O2",
+      "to": "JR-A-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-O1",
+      "to": "JR-A-R",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-H",
+      "to": "JR-A-P-BK",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-P-BK",
+      "to": "BK-A1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-H",
+      "to": "JR-A-P-GW",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-P-GW",
+      "to": "GW-A1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-H",
+      "to": "JR-A-P-VE",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-P-VE",
+      "to": "VE-A1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-I1",
+      "to": "JR-B-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-I2",
+      "to": "JR-B-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-I3",
+      "to": "JR-B-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-I4",
+      "to": "JR-B-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-O1",
+      "to": "JR-B-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-O2",
+      "to": "JR-B-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-O2",
+      "to": "JR-B-R",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-H",
+      "to": "JR-B-P-VE",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-P-VE",
+      "to": "VE-B1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-H",
+      "to": "JR-B-P-DR",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-P-DR",
+      "to": "DR-B1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-H",
+      "to": "JR-B-P-VC",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-B-P-VC",
+      "to": "VC-B1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-I1",
+      "to": "JR-C-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-I2",
+      "to": "JR-C-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-I3",
+      "to": "JR-C-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-I4",
+      "to": "JR-C-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-O1",
+      "to": "JR-C-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-O2",
+      "to": "JR-C-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-O2",
+      "to": "JR-C-R",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-H",
+      "to": "JR-C-P-BK",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-P-BK",
+      "to": "BK-C1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-H",
+      "to": "JR-C-P-DR",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-P-DR",
+      "to": "DR-C1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-H",
+      "to": "JR-C-P-GW",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-P-GW",
+      "to": "GW-C1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-I1",
+      "to": "JR-D-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-I2",
+      "to": "JR-D-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-I3",
+      "to": "JR-D-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-I4",
+      "to": "JR-D-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-O1",
+      "to": "JR-D-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-O2",
+      "to": "JR-D-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-O1",
+      "to": "JR-D-R",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-H",
+      "to": "JR-D-P-DR",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-P-DR",
+      "to": "DR-D1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-H",
+      "to": "JR-D-P-VC",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-P-VC",
+      "to": "VC-D1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-H",
+      "to": "JR-D-P-LA",
+      "class": "limited",
+      "mode": "hidden",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-D-P-LA",
+      "to": "LA-D1",
+      "class": "limited",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-I1",
+      "to": "JR-E-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-I2",
+      "to": "JR-E-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-I3",
+      "to": "JR-E-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-O1",
+      "to": "JR-E-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-O2",
+      "to": "JR-E-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-H",
+      "to": "JR-E-P-VE",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-P-VE",
+      "to": "VE-E1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-H",
+      "to": "JR-E-P-DR",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-P-DR",
+      "to": "DR-E1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-O2",
+      "to": "JR-E-P-VD",
+      "class": "limited",
+      "mode": "hidden",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-P-VD",
+      "to": "VD-E1",
+      "class": "limited",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-I1",
+      "to": "JR-F-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-I2",
+      "to": "JR-F-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-I3",
+      "to": "JR-F-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-O1",
+      "to": "JR-F-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-O2",
+      "to": "JR-F-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-O1",
+      "to": "JR-F-R",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-H",
+      "to": "JR-F-P-GW",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-P-GW",
+      "to": "GW-F1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-H",
+      "to": "JR-F-P-VC",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-P-VC",
+      "to": "VC-F1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-H",
+      "to": "JR-F-P-VE",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-F-P-VE",
+      "to": "VE-F1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-I1",
+      "to": "JR-G-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-I2",
+      "to": "JR-G-O2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-I3",
+      "to": "JR-G-O1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-O1",
+      "to": "JR-G-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-O2",
+      "to": "JR-G-H",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-O2",
+      "to": "JR-G-R",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-H",
+      "to": "JR-G-P-BK",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-P-BK",
+      "to": "BK-G1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-H",
+      "to": "JR-G-P-GW",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-P-GW",
+      "to": "GW-G1",
+      "class": "primary",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-H",
+      "to": "JR-G-P-SH",
+      "class": "limited",
+      "mode": "hidden",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-P-SH",
+      "to": "SH-G1",
+      "class": "limited",
+      "mode": "boundary",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-A-H",
+      "to": "JR-B-O2",
+      "class": "limited",
+      "mode": "limited-surface",
+      "closes": "day38",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-C-H",
+      "to": "JR-D-O1",
+      "class": "limited",
+      "mode": "dangerous-surface",
+      "closes": "day38",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-E-H",
+      "to": "JR-F-O2",
+      "class": "limited",
+      "mode": "social-guide",
+      "closes": "day38",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "JR-G-H",
+      "to": "JR-A-O2",
+      "class": "limited",
+      "mode": "hidden-surface",
+      "closes": "day38",
+      "sourceLayer": "jungle-ring-v1"
+    },
+    {
+      "from": "BK-A1",
+      "to": "BK-A2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-A2",
+      "to": "BK-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-C1",
+      "to": "BK-C2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-C2",
+      "to": "BK-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-G1",
+      "to": "BK-G2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-G2",
+      "to": "BK-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-H1",
+      "to": "BK-H2",
+      "class": "internal",
+      "mode": "damaged",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-H2",
+      "to": "BK-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-A1",
+      "to": "VE-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-B1",
+      "to": "VE-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-E1",
+      "to": "VE-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-F1",
+      "to": "VE-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-H1",
+      "to": "VE-X1",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-X1",
+      "to": "VE-H2",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-B1",
+      "to": "DR-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-C1",
+      "to": "DR-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-D1",
+      "to": "DR-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-E1",
+      "to": "DR-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-H1",
+      "to": "DR-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-H2",
+      "to": "DR-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-H1",
+      "to": "DR-H3",
+      "class": "internal",
+      "mode": "conditional-restoration",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "GW-A1",
+      "to": "GW-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "GW-C1",
+      "to": "GW-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "GW-F1",
+      "to": "GW-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "GW-G1",
+      "to": "GW-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "GW-H1",
+      "to": "GW-H2",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "GW-H2",
+      "to": "GW-H3",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "GW-H3",
+      "to": "GW-H1",
+      "class": "internal",
+      "mode": "unstable",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VC-B1",
+      "to": "VC-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VC-D1",
+      "to": "VC-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VC-F1",
+      "to": "VC-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VC-H1",
+      "to": "VC-S1",
+      "class": "internal",
+      "mode": "social",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VC-H2",
+      "to": "VC-S1",
+      "class": "internal",
+      "mode": "social",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VC-H3",
+      "to": "VC-S1",
+      "class": "internal",
+      "mode": "social",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VC-H1",
+      "to": "VC-H2",
+      "class": "internal",
+      "mode": "hidden",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VC-H2",
+      "to": "VC-H3",
+      "class": "internal",
+      "mode": "social",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-H1",
+      "to": "DR-H1",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-H3",
+      "to": "DR-H2",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-H2",
+      "to": "GW-H1",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-H3",
+      "to": "GW-H3",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-H1",
+      "to": "DR-H1",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-H2",
+      "to": "DR-H3",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-H1",
+      "to": "GW-H1",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-H2",
+      "to": "GW-H2",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-H2",
+      "to": "GW-H2",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-H3",
+      "to": "GW-H3",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-H1",
+      "to": "VC-H1",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "DR-H3",
+      "to": "VC-H3",
+      "class": "primary",
+      "mode": "ordinary",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-H1",
+      "to": "VE-H1",
+      "class": "limited",
+      "mode": "damaged-hidden",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "BK-H2",
+      "to": "VC-H1",
+      "class": "limited",
+      "mode": "social-small",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VE-H2",
+      "to": "VC-H3",
+      "class": "limited",
+      "mode": "conditional-small",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "GW-H2",
+      "to": "VC-H2",
+      "class": "limited",
+      "mode": "dangerous-social",
+      "sourceLayer": "interior-mixing-v1"
+    },
+    {
+      "from": "VD-E1",
+      "to": "VD-XE1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-XE1",
+      "to": "VD-H2",
+      "class": "internal",
+      "mode": "hidden-geometry",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-BK1",
+      "to": "VD-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-VE1",
+      "to": "VD-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-VE2",
+      "to": "VD-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-DR1",
+      "to": "VD-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-DR2",
+      "to": "VD-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-GW1",
+      "to": "VD-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-VC1",
+      "to": "VD-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-H1",
+      "to": "VD-H2",
+      "class": "internal",
+      "mode": "geomantic",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-H2",
+      "to": "VD-H3",
+      "class": "internal",
+      "mode": "geomantic",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-H1",
+      "to": "VD-H3",
+      "class": "internal",
+      "mode": "conditional-activation",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-D1",
+      "to": "LA-XD1",
+      "class": "internal",
+      "mode": "unstable",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-XD1",
+      "to": "LA-H1",
+      "class": "internal",
+      "mode": "memory-shift",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-BK1",
+      "to": "LA-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-VE1",
+      "to": "LA-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-DR1",
+      "to": "LA-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-VD1",
+      "to": "LA-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-VD2",
+      "to": "LA-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-H1",
+      "to": "LA-H2",
+      "class": "internal",
+      "mode": "perception-dependent",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-H2",
+      "to": "LA-H3",
+      "class": "internal",
+      "mode": "learnable",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-H3",
+      "to": "LA-H1",
+      "class": "internal",
+      "mode": "directional-memory",
+      "directed": true,
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-VE1",
+      "to": "EK-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-DR1",
+      "to": "EK-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-DR2",
+      "to": "EK-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-GW1",
+      "to": "EK-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-GW2",
+      "to": "EK-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-VC1",
+      "to": "EK-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-VC2",
+      "to": "EK-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-VD1",
+      "to": "EK-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-H1",
+      "to": "EK-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-H2",
+      "to": "EK-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-H1",
+      "to": "EK-H3",
+      "class": "internal",
+      "mode": "conditional-diplomatic",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-G1",
+      "to": "SH-XG1",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-XG1",
+      "to": "SH-XG2",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-XG2",
+      "to": "SH-H1",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-BK1",
+      "to": "SH-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-BK2",
+      "to": "SH-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-VE1",
+      "to": "SH-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-VE2",
+      "to": "SH-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-DR1",
+      "to": "SH-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-DR2",
+      "to": "SH-H4",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-GW1",
+      "to": "SH-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-GW2",
+      "to": "SH-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-VC1",
+      "to": "SH-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-VC2",
+      "to": "SH-H4",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-VD1",
+      "to": "SH-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-VD2",
+      "to": "SH-H4",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-EK1",
+      "to": "SH-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-EK2",
+      "to": "SH-H4",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-LA1",
+      "to": "SH-H4",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-H1",
+      "to": "SH-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-H2",
+      "to": "SH-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-H3",
+      "to": "SH-H4",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-H1",
+      "to": "SH-H3",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-H2",
+      "to": "SH-H4",
+      "class": "internal",
+      "mode": "unstable",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-VE1",
+      "to": "CU-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-DR1",
+      "to": "CU-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-GW1",
+      "to": "CU-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-VC1",
+      "to": "CU-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-VD1",
+      "to": "CU-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-LA1",
+      "to": "CU-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-EK1",
+      "to": "CU-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-EK2",
+      "to": "CU-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-SH1",
+      "to": "CU-H1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-SH2",
+      "to": "CU-H2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-SH3",
+      "to": "CU-H3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-H1",
+      "to": "CU-H2",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-H2",
+      "to": "CU-H3",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-H3",
+      "to": "CU-H1",
+      "class": "internal",
+      "mode": "dangerous",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-H1",
+      "to": "CU-T1",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-H2",
+      "to": "CU-T2",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-H3",
+      "to": "CU-T3",
+      "class": "internal",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-H1",
+      "to": "LA-VD1",
+      "class": "primary",
+      "mode": "geomantic-memory",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-H3",
+      "to": "LA-VD2",
+      "class": "primary",
+      "mode": "geomantic-memory",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-H2",
+      "to": "SH-VD1",
+      "class": "primary",
+      "mode": "fault-breach",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-H3",
+      "to": "SH-VD2",
+      "class": "primary",
+      "mode": "fault-breach",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-H3",
+      "to": "EK-VD1",
+      "class": "limited",
+      "mode": "hidden-hot-route",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VD-H3",
+      "to": "CU-VD1",
+      "class": "limited",
+      "mode": "upper-meridian",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-H3",
+      "to": "SH-LA1",
+      "class": "limited",
+      "mode": "unstable-fault",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "LA-H2",
+      "to": "CU-LA1",
+      "class": "limited",
+      "mode": "memory-shortcut",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-H1",
+      "to": "SH-EK1",
+      "class": "primary",
+      "mode": "thermal-fault",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-H3",
+      "to": "SH-EK2",
+      "class": "primary",
+      "mode": "thermal-fault",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-H2",
+      "to": "CU-EK1",
+      "class": "primary",
+      "mode": "rising-heat-route",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "EK-H3",
+      "to": "CU-EK2",
+      "class": "primary",
+      "mode": "rising-heat-route",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-H2",
+      "to": "CU-SH1",
+      "class": "primary",
+      "mode": "fault-ascent",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-H3",
+      "to": "CU-SH2",
+      "class": "primary",
+      "mode": "fault-ascent",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-H4",
+      "to": "CU-SH3",
+      "class": "primary",
+      "mode": "fault-ascent",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-T1",
+      "to": "CR-O1",
+      "class": "primary",
+      "mode": "outer-threshold",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-T2",
+      "to": "CR-O2",
+      "class": "primary",
+      "mode": "outer-threshold",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CU-T3",
+      "to": "CR-O3",
+      "class": "primary",
+      "mode": "outer-threshold",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-H4",
+      "to": "SH-CROWN1",
+      "class": "limited",
+      "mode": "exposed-upper-scar",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "SH-CROWN1",
+      "to": "CR-O3",
+      "class": "limited",
+      "mode": "outer-threshold",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "DR-CROWN1",
+      "to": "CR-O1",
+      "class": "limited",
+      "mode": "restored-sky-lift",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "VC-CROWN1",
+      "to": "CR-O2",
+      "class": "limited",
+      "mode": "social-needle-chimney",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CR-S1",
+      "to": "CR-S2",
+      "class": "threshold",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CR-S2",
+      "to": "CR-S3",
+      "class": "threshold",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CR-S3",
+      "to": "CR-S4",
+      "class": "threshold",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CR-S4",
+      "to": "CR-S5",
+      "class": "threshold",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CR-S5",
+      "to": "CR-S1",
+      "class": "threshold",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CR-O1",
+      "to": "CR-S1",
+      "class": "threshold",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CR-O1",
+      "to": "CR-S2",
+      "class": "threshold",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CR-O2",
+      "to": "CR-S3",
+      "class": "threshold",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CR-O3",
+      "to": "CR-S4",
+      "class": "threshold",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "CR-O3",
+      "to": "CR-S5",
+      "class": "threshold",
+      "mode": "ordinary",
+      "sourceLayer": "inner-convergence-v1"
+    },
+    {
+      "from": "BK-H1",
+      "to": "SH-BK1",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "BK-H3",
+      "to": "SH-BK2",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "BK-H2",
+      "to": "VD-BK1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "BK-H1",
+      "to": "LA-BK1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VE-H1",
+      "to": "VD-VE1",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VE-H2",
+      "to": "VD-VE2",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VE-H1",
+      "to": "SH-VE1",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VE-H2",
+      "to": "SH-VE2",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VE-H2",
+      "to": "EK-VE1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VE-X1",
+      "to": "LA-VE1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VE-H2",
+      "to": "CU-VE1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "DR-H1",
+      "to": "VD-DR1",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "DR-H3",
+      "to": "VD-DR2",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "DR-H2",
+      "to": "EK-DR1",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "DR-H3",
+      "to": "EK-DR2",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "DR-H1",
+      "to": "SH-DR1",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "DR-H2",
+      "to": "SH-DR2",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "DR-H3",
+      "to": "LA-DR1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "DR-H3",
+      "to": "CU-DR1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "GW-H1",
+      "to": "EK-GW1",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "GW-H3",
+      "to": "EK-GW2",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "GW-H1",
+      "to": "SH-GW1",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "GW-H3",
+      "to": "SH-GW2",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "GW-H1",
+      "to": "VD-GW1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "GW-H2",
+      "to": "CU-GW1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VC-H2",
+      "to": "EK-VC1",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VC-H3",
+      "to": "EK-VC2",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VC-H1",
+      "to": "SH-VC1",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VC-H3",
+      "to": "SH-VC2",
+      "class": "primary",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VC-H1",
+      "to": "VD-VC1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "VC-H2",
+      "to": "CU-VC1",
+      "class": "limited",
+      "mode": "macro-interface",
+      "sourceLayer": "interface-consumption-v1"
+    },
+    {
+      "from": "DR-H3",
+      "to": "DR-CROWN1",
+      "class": "limited",
+      "mode": "restoration-and-route-knowledge",
+      "sourceLayer": "exceptional-origin-v1"
+    },
+    {
+      "from": "VC-S1",
+      "to": "VC-CROWN1",
+      "class": "limited",
+      "mode": "social-access-and-route-knowledge",
+      "sourceLayer": "exceptional-origin-v1"
+    }
+  ],
+  "contractionSchedule": {
+    "day31": "peripheral Jungle insertion/reward closure",
+    "day38": "ordinary Jungle feeders and surface bridges close",
+    "day45": "Jungle hubs/penetrations and selected lower interior branches close",
+    "day52": "outer/middle interior closes; upper inner connectors, Caldera and outer Crucible remain"
+  },
+  "notes": [
+    "Protected Crucible interior and Prime Victor arena remain deferred.",
+    "Exact contestant placement and gem colors are not encoded in topology v1."
+  ]
+}
